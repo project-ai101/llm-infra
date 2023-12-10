@@ -1,5 +1,5 @@
 # llm-infra
-In-depth tutorials and examples on how to use Pytorch, Fairscale, Nvidia AI tools (cuDNN, tensorRT, Megatron-LM), HuggingFace to perform LLM related tasks.
+In-depth tutorials and examples on LLM related infrastructure. They are Pytorch, Fairscale, Nvidia AI tools (cuDNN, tensorRT, Megatron-LM) are HuggingFace.
 The main LLMs are open source models, LLAMA 2 from Meta, Mistral and Mistral MoE.
 
 ### LLMs
