@@ -30,6 +30,6 @@ Open source project from Meta to support multiple GPUs in the same host machine 
 ##### tensorRT
 
 ##### Megatron-LM
-
+[Megatron-LM](https://github.com/NVIDIA/Megatron-LM)
 
 ### HuggingFace
