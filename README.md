@@ -29,9 +29,14 @@ Open source project from Meta to support multiple GPUs in the same host machine 
 
 ##### cuDNN
 
-##### tensorRT and tensorRT-LLM
+##### tensorRT
+
+##### tensorRT-LLM
+[tensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM)
+
 
 ##### Megatron and Megatron-LM
 [Megatron-LM](https://github.com/NVIDIA/Megatron-LM)
+
 
 ### HuggingFace
