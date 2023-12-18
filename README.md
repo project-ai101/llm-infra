@@ -1,4 +1,6 @@
 # llm-infra
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -- Author: Bin Tan
+
 In-depth tutorials and examples on LLM training and inference infrastructure. They are Pytorch, Fairscale, Nvidia AI Modules (cuDNN, tensorRT, Megatron-LM) and HuggingFace.
 The main LLMs are open source models, LLAMA 2 from Meta, Mistral and Mistral MoE.
 
