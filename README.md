@@ -16,7 +16,7 @@ The main LLMs are open source models, LLAMA 2 from Meta, Mistral and Mistral MoE
 ### Basic Pytorch
 In this section, the basic concepts and APIs associated with them are discussed.
 And many examples are given to help on how to use them. After this tutorial, 
-- [Tensor and Model](./basic_pytorch/tensor_model.md)
+- [Tensor and Model](./basic_pytorch/tensor_and_model.md)
 - [Auto Gradient and Backward Propagation](./basic_pytorch/autogradient_backwordpropagation.md)
 - [Model Training](./basic_pytorch/model_training.md)
 - [Graph_Model Format](./basic_pytorch/graph_model_format.md)
