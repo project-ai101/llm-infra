@@ -30,7 +30,7 @@ framework to support Pytorch run over distributed GPUs. The framework library is
 open source project from Meta. The github link is 
 [here](https://github.com/facebookresearch/fairscale)
 
-### Deep Learning Automation - Pytorch Lightning
+### LLM Automation - Pytorch Lightning
 Pytorch Lightning is an open source project to develop a deep learning framework 
 to pretrain, finetune and deploy AI models. The github link is 
 [here](https://github.com/Lightning-AI/pytorch-lightning). 
@@ -42,7 +42,7 @@ to pretrain, finetune and deploy AI models. The github link is
 - [PyTorch C++](./advanced_pytorch/cpp.md)
 
 
-### Nvidia AI Modules
+### LLM HPC - Nvidia AI Modules
 
 ##### cuDNN
 
@@ -56,4 +56,4 @@ to pretrain, finetune and deploy AI models. The github link is
 [Megatron-LM](https://github.com/NVIDIA/Megatron-LM)
 
 
-### HuggingFace
+### LLM Community - HuggingFace
