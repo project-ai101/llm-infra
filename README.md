@@ -20,13 +20,20 @@ And many examples are given to help on how to use them. After this tutorial,
 - [Auto Gradient and Backward Propagation](./basic_pytorch/autogradient_backwordpropagation.md)
 - [Model Training](./basic_pytorch/model_training.md)
 - [Graph_Model Format](./basic_pytorch/graph_model_format.md)
-- [DataSets](./basic_pytorch/datasets.md): a list of links for popular data sets used for LLM training and validation
+- [DataSets](./basic_pytorch/datasets.md): a list of links for popular data sets
+-  used for LLM training and validation
 are provided.
 
 ### Distributed Pytorch - Fairscale
 For LLMs, the memory and computation capacity demands require many GPUs. Fairscale is 
 framework to support Pytorch run over distributed GPUs. The framework library is an
-open source project from Meta.
+open source project from Meta. The github link is 
+[here](https://github.com/facebookresearch/fairscale)
+
+### Deep Learning Automation - Pytorch Lightning
+Pytorch Lightning is an open source project to develop a deep learning framework 
+to pretrain, finetune and deploy AI models. The github link is 
+[here](https://github.com/Lightning-AI/pytorch-lightning). 
 
 ### Advanced Pytorch
 
