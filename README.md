@@ -18,7 +18,7 @@ In this section, the basic concepts and APIs associated with them are discussed.
 And many examples are given to help on how to use them. After this tutorial, 
 - [Tensor](./basic_pytorch/tensor.md)
 - [Model](./basic_pytorch/model.md)
-- [Auto Gradient and Backward Propagation](./basic_pytorch/autogradient_backwordpropagation.md)
+- [Auto Gradient and Backward Propagation](./basic_pytorch/gradient_backword.md)
 - [Model Training](./basic_pytorch/model_training.md)
 - [Graph_Model Format](./basic_pytorch/graph_model_format.md)
 - [DataSets](./basic_pytorch/datasets.md): a list of links for popular data sets
@@ -44,6 +44,7 @@ to pretrain, finetune and deploy AI models. The github link is
 
 
 ### LLM HPC - Nvidia AI Modules
+##### cuda Grapu
 
 ##### cuDNN
 
