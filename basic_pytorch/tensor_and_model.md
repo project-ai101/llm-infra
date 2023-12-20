@@ -1,11 +1,10 @@
-# Tensor and Model
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp; -- Author: Bin Tan
+# Tensor
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -- Author: Bin Tan
 
-In this tutorial, the basic concepts of tensor and model are introduced. They are
+In this tutorial, the basic concepts of tensor are introduced. They are
 explained from pytorch programming perspectives, not from rigorous mathematical
 ways. 
 
-### Tensor
 A tensor is an object in pytorch, which has an array of elements with a single 
 data type and is viewed as a multi-dimensional matrix. A pytorch tensor can be
 located in the CPU memory or a device, such as, GPU, or TPU, or a storage device.
@@ -16,7 +15,7 @@ To deep dive into the pytorch tensor, the following properties are discussed,
 - location and movement
 - mathematic methods
 
-##### Creation
+### creation
 Let's create a simple tensor from a Python list as following and name the python
 script file as tensor_creation.py.
 ```python
@@ -83,16 +82,16 @@ shows how to use the torch.rand() API to create such a tensor,
 ```
 The output is
 ```
-tensor([[[0.5408, 0.1545, 0.8220, 0.9905],
-         [0.7820, 0.4441, 0.8045, 0.4701],
-         [0.8454, 0.7974, 0.6893, 0.7161]],
+tensor([[[0.5924, 0.1014, 0.3705, 0.3951],
+         [0.4991, 0.4058, 0.6068, 0.9218],
+         [0.1601, 0.4973, 0.3497, 0.6603]],
 
-        [[0.2820, 0.7561, 0.7128, 0.0659],
-         [0.0251, 0.5931, 0.5352, 0.2192],
-         [0.9238, 0.4620, 0.6503, 0.7448]]])
+        [[0.4302, 0.8504, 0.9999, 0.9311],
+         [0.8682, 0.7242, 0.2806, 0.1216],
+         [0.0695, 0.9797, 0.6955, 0.6626]]])
 ```
 
-##### shape, slice, stide, view and reshape
+### shape, slice, stide, view and reshape
 When the tensors t2, t3 and t4 were created in the above section, the dimensions were passed 
 in three formats. The dimensions describe the shapes of the tensors. Pytorch use torch.Size 
 ( a subclass of tuple) data type to define the dimensions of a tensor. Here is an example 
@@ -122,7 +121,15 @@ like a normal python multi-dimensional array. For example,
 ```
 The output is
 ```
-
+---------- t4 slice tt4 = t4[0]:
+tensor([[0.5924, 0.1014, 0.3705, 0.3951],
+        [0.4991, 0.4058, 0.6068, 0.9218],
+        [0.1601, 0.4973, 0.3497, 0.6603]])
+torch.Size([3, 4])
+---------- t4 slice ttt4 = t4[:,:,0]:
+tensor([[0.5924, 0.4991, 0.1601],
+        [0.4302, 0.8682, 0.0695]])
+torch.Size([2, 3])
 ```
 Further, though tt4 and ttt4 are different tensor objects with respect to t4, they share the same
 data elements. To prove this, let's change the value of element [0, 0] in tt4 to 10.0f and print
@@ -131,7 +138,10 @@ out the value of element [0, 0, 0] in t4.
     tt4[0,0] = 10.0
     print(t4[0,0,0])
 ```
-
+The output is
+```
+tensor(10.)
+```
 How the elements of a tensor are layouted in the memory has big impact to the overall 
 tensor calculation performance. The memory layout typcially is described by stride. A stride
 decribes how far the next element along the dimension is apart in the actually memory. For example,
@@ -163,3 +173,87 @@ torch.Size([2, 12])
 (12, 1)
 Do t4 and t5 share the same underlying data?  True
 ```
+
+There are two additional ways to change the shape of a tensor. They are transpose and reshape APIs? What are
+their difference? Let's take a close look by running through following code snippet,
+```python
+    t6 : torch.Tensor = t4.view(2,4,3)
+    print("---------- t6 = t4.view(2,4,3):")
+    print(t6.shape)
+    print(t6.stride())
+    print("Is t6 contiguous? ", t6.is_contiguous())
+    print("Do t4 and t6 share the same underlying data? ",
+          t4.storage().data_ptr() == t6.storage().data_ptr())
+    print(t6)
+
+    t7 : torch.Tensor = t4.transpose(1,2)
+    print("---------- t7 = t4.transpose(1,2):")
+    print(t7.shape)
+    print(t7.stride())
+    print("Is t7 contiguous? ", t7.is_contiguous())
+    print("Do t4 and t7 share the same underlying data? ",
+          t4.storage().data_ptr() == t7.storage().data_ptr())
+    print(t7)
+
+    t8 : torch.Tensor = t4.reshape((2,4,3))
+    print("---------- t8 = t4.reshape((2,4,3)):")
+    print(t8.shape)
+    print(t8.stride())
+    print("Is t8 contiguous? ", t8.is_contiguous())
+    print("Do t4 and t8 share the same underlying data? ",
+          t4.storage().data_ptr() == t8.storage().data_ptr())
+    print(t8)
+```
+The output is
+```
+---------- t6 = t4.view(2,4,3):
+torch.Size([2, 4, 3])
+(12, 3, 1)
+Is t6 contiguous?  True
+Do t4 and t6 share the same underlying data?  True
+tensor([[[10.0000,  0.1014,  0.3705],
+         [ 0.3951,  0.4991,  0.4058],
+         [ 0.6068,  0.9218,  0.1601],
+         [ 0.4973,  0.3497,  0.6603]],
+
+        [[ 0.4302,  0.8504,  0.9999],
+         [ 0.9311,  0.8682,  0.7242],
+         [ 0.2806,  0.1216,  0.0695],
+         [ 0.9797,  0.6955,  0.6626]]])
+---------- t7 = t4.transpose(1,2):
+torch.Size([2, 4, 3])
+(12, 1, 4)
+Is t7 contiguous?  False
+Do t4 and t7 share the same underlying data?  True
+tensor([[[10.0000,  0.4991,  0.1601],
+         [ 0.1014,  0.4058,  0.4973],
+         [ 0.3705,  0.6068,  0.3497],
+         [ 0.3951,  0.9218,  0.6603]],
+
+        [[ 0.4302,  0.8682,  0.0695],
+         [ 0.8504,  0.7242,  0.9797],
+         [ 0.9999,  0.2806,  0.6955],
+         [ 0.9311,  0.1216,  0.6626]]])
+---------- t8 = t4.reshape((2,4,3)):
+torch.Size([2, 4, 3])
+(12, 3, 1)
+Is t8 contiguous?  True
+Do t4 and t8 share the same underlying data?  True
+tensor([[[10.0000,  0.1014,  0.3705],
+         [ 0.3951,  0.4991,  0.4058],
+         [ 0.6068,  0.9218,  0.1601],
+         [ 0.4973,  0.3497,  0.6603]],
+
+        [[ 0.4302,  0.8504,  0.9999],
+         [ 0.9311,  0.8682,  0.7242],
+         [ 0.2806,  0.1216,  0.0695],
+         [ 0.9797,  0.6955,  0.6626]]])
+
+```
+
+From above output, when the new shape (2,4,3) is compatible with the existing shape (2,4,3), the 
+Tensor.view() is equivalent to Tensor.reshape() which just reinterpret the underline data in
+contiguous way. However, Tensor.transpose() does not keep the contiguous of strides.
+
+The example code for the discussion is [here](./tensor_creation.py). Note that re-running the example 
+shall have different values of tensors due to the randomness of t4.
