@@ -257,3 +257,48 @@ contiguous way. However, Tensor.transpose() does not keep the contiguous of stri
 
 The example code for the discussion is [here](./tensor_creation.py). Note that re-running the example 
 shall have different values of tensors due to the randomness of t4.
+
+### Location and Movement
+A tensor can be in CPU memory or GPU memory. To test it, one can use 
+```python
+   Tensor.is_cuda
+```
+On a Linux platform, false means the tensor is stored in CPU and true means the tensor is 
+stored in a GPU device.
+
+How to change the storage location of a tensor? To transfer a tensor from CPU to a GPU memory, one
+can invoke following API,
+```python
+   Tensor.to("cuda:0")
+```
+0 represents the GPU index of 0. To transfer a tensor from a GPU memory to CPU memory, the following
+API call can be used,
+```python
+   Tensor.to("cpu")
+```
+
+### Addition and Multiplication
+The tensor addition in pytorch,
+```python
+   torch.add(input, other, *, alpha=1, out=None) -> Tensor
+```
+does element-wise addition. This requires that both input and other have the same shape.
+
+The tensor multiplication in pytorch follows the same principle of tensor contraction. The pytorch 
+API is,
+```python
+   torch.matmul(input, other, *, out=None) -> Tensor
+```
+As an example, if input is a (j x 1 x n x m) tensor and other is a (k x m x p) tensor,
+the result tensor shall be a (j x k x n x p) tensor as the m in the both tensor
+plays the contraction dimension.
+
+### Mathematic Methods
+Pytorch provides a rich set of mathmatic operations. One may reference to this 
+[link](https://pytorch.org/docs/stable/torch.html#math-operations) for details. 
+Most of the operations are pointwise ops. For example,
+```pyhton
+   torch.abs(input, *, out=None) -> Tensor
+```
+returns a new tensor whose elements are the absolute values of the elements of input.
+The shape of return tensor shall be the same of input.
