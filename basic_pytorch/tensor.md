@@ -107,6 +107,11 @@ The output is
 torch.Size([2, 3, 4])
 torch.Size([2, 3, 4])
 ```
+In Pytorch, often one may see innermost and outermost dimension. These concepts really refer
+to the position of a dimension with respect to the tensor layout. The innermost means the 
+elements are layed out in this dimension first. The outermost means the elements are layed out in 
+the dimension last. In the shape (aka size), the innermost dimension is the dimension in the
+right most position and the outermost dimension is the dimension in the left most position.
 
 Pytorch treats a tensor like a multi-dimensional array (or matrix). A tensor can be access by indexes
 like a normal python multi-dimensional array. For example,
