@@ -37,5 +37,11 @@ f(x - \Delta_{l}) = f(x) - f^{'}(x){\Delta_{l}} + \frac{1}{2!} f^{''}(x) {\Delta
 By subtracting two equations, one has
 ```math
 f(x + \Delta_{r}) \Delta_{l}^{2} - f(x - \Delta_{l}) \Delta_{r}^{2} =
-f(x)(\Delta_{l}^{2} - \Delta_{r}^{2}) + f^{'}(x)
+f(x)(\Delta_{l}^{2} - \Delta_{r}^{2}) + f^{'}(x)(\Delta_{r}\Delta_{l}^{2} + \Delta_{l}\Delta_{r}^{2}) + o(\Delta^{5})
+```
+Then, the gradient (aka derivative for the scalar function $` f: R \to R`$ is
+```math
+    f^{'}(x) = \frac{f(x + \Delta_{r}) \Delta_{l}^{2} - f(x - \Delta_{l}) \Delta_{r}^{2} - f(x)(\Delta_{l}^{2} - \Delta_{r}^{2})}
+                    {\Delta_{r}\Delta_{l}^{2} + \Delta_{l}\Delta_{r}^{2}}
+               + o(\Delta^{2})
 ```
