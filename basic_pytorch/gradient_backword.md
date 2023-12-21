@@ -74,3 +74,14 @@ Recall the torch.gradient() signature,
 ```python
    torch.gradient(input, *, spacing=1, dim=None, edge_order=1) -> List of Tensors
 ```
+
+```
+tensor([1., 2., 4., 5.])
+```
+
+The python code is [gradient.py](./gradient.py).
+
+Let $` input = tensor(Y) `$. Then, invocation of torch.gradient() generates the same result
+```python
+
+```
