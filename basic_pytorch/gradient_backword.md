@@ -14,7 +14,7 @@ scalar function), $` f: R \to R `$,
 When the $`\Delta x`$ is small enough and the function $` f(x) `$ is differentiable, its derivative
 (aka gradient) along $` x `$ can be approximated as
 ```math
-  (1) \hspace {2cm} f^{'}(x) = \frac{f(x + \Delta) - f(x)}{\Delta}
+  (1) \hspace {2cm} f^{'}(x) = \frac{f(x + \Delta) - f(x)}{\Delta} \hspace {8.5cm}
 ```
 Now, since above formular is the approximation of the derivative, one may want to ask what the
 error rate should be. If $` f(x) `$ is smooth enough (aka, the high order derivatives do exist),
@@ -57,8 +57,20 @@ For example, let's first look into a simple scalar function, $` f(x) = x^{2} `$.
 ```python
    tensor(X) = [0, 1, 2, 3].
 ```
-It represents 4 points along the dimension 0. Further, the spacing between adjacent points is 1. The values of 
+It represents 4 points along the dimension 0. Further, the spacing ($`\Delta_{r}=\Delta_{l}=1`$) between adjacent points is 1. The values of 
 the function $` f(x) = x^{2} `$ can be easily calculated and represented by the following tensor
 ```python
-   tensor(Y) = [0, 2, 4, 6].
+   tensor(Y) = [0, 1, 4, 9].
+```
+For the boundary points 0 and 3, we can use formular (1) to calculate the gradients and for the middle points 1 and 2,
+we can use formular (2) to calculate the gradients. And the result is
+```python
+   tensor(gradient) = [1, 2, 4, 5]
+```
+
+Does the result match with pytorch gradient API, torch.gradient()? 
+
+Recall the torch.gradient() signature,
+```python
+   torch.gradient(input, *, spacing=1, dim=None, edge_order=1) -> List of Tensors
 ```
