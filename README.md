@@ -34,8 +34,8 @@ computation.
 - [Model](./basic_pytorch/model.md)
 
 ##### Pytorch with Autograd
-- [Gradient and Backward Propagation](./basic_pytorch/gradient_backword.md)
-- Autograd Graph
+- [Gradient](./basic_pytorch/gradient.md)
+- [Autograd](./basic_pytorch/autograd.md)
 
 ##### Model Training
 - [Model Training](./basic_pytorch/model_training.md)
