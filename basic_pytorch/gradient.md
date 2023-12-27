@@ -1,7 +1,6 @@
-# Gradient and Backward Propogation
+# Gradient
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Author: Bin Tan
 
-### Gradient
 Gradient is one of the most important concepts in AI training. The pytorch reference is 
 [here](https://pytorch.org/docs/stable/generated/torch.gradient.html#torch.gradient). In this 
 tutorial, I will explain the concept in a different way to make it easy to be understood.
