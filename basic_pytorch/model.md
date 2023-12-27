@@ -56,7 +56,5 @@ class SimpleLinearModel(torch.nn.Module):
         self.register_parameter("bias", bias_param)
 
     def forward(self, x):
-        weight = self.get_parameter("weight")
-        bias = self.get_parameter("bias")
-        return weight.mm(x) + bias
+        return self.weight.mm(x) + self.bias
 ```
