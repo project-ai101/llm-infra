@@ -1,8 +1,22 @@
 # llm-infra
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -- Author: Bin Tan
 
-In-depth tutorials and examples on LLM training and inference infrastructure. They are Pytorch, Fairscale, Nvidia AI Modules (cuDNN, tensorRT, Megatron-LM) and HuggingFace.
-The main LLMs are open source models, LLAMA 2 from Meta, Mistral and Mistral MoE.
+LLM-Infra respository provides in-depth tutorials and examples on LLM training and inference infrastructure in one place
+for people to learn LLM based AI. The areas which I mainly focus on are Pytorch, Fairscale, Nvidia AI packages 
+(cuDNN, tensorRT, Megatron-LM) and HuggingFace.
+Also, only open source LLMs, such as, LLAMA 2 from Meta and Mistral LLMs from Mistral, are extensively used 
+in the discussion. Open source LLMs allow us to look into the details of LLMs.
+
+In LLMs, tensor computation is the fundamental tool to turn LLMs into reality. For tensor computation,
+there are two important aspects, one is to make complex tensor computation easy to use and another is to
+make massive tensor computation fast. The Basic Pytorch section is mainly designed to explore how pytorch
+makes tensor computation easy. Further, the Advanced Pytorch section looks into ways to extend pytorch with
+format exchangability, the LLM Automation section reviews Pytorch Lighting as a platform to automate the
+deep learning development flow, the LLM Community section uses Huggingface a focal point for various LLM
+related resources, such as, LLMs, Dataset, LLM based applications.
+
+Both Distributed Pytorch and LLM HPC - Nvidia AI Tools sections are mainly for high performance tensor
+computation.
 
 ### LLMs Overview
 
@@ -12,17 +26,23 @@ The main LLMs are open source models, LLAMA 2 from Meta, Mistral and Mistral MoE
 
 ##### Mistral
 
-
 ### Basic Pytorch
-In this section, the basic concepts and APIs associated with them are discussed.
-And many examples are given to help on how to use them. After this tutorial, 
+
+
+##### Pytorch as a tensor library
 - [Tensor](./basic_pytorch/tensor.md)
 - [Model](./basic_pytorch/model.md)
+
+##### Pytorch with Autograd
 - [Gradient and Backward Propagation](./basic_pytorch/gradient_backword.md)
+- Autograd Graph
+
+##### Model Training
 - [Model Training](./basic_pytorch/model_training.md)
 - [Graph Model Format](./basic_pytorch/graph_model_format.md)
-- [DataSets](./basic_pytorch/datasets.md): a list of links for popular data sets
--  used for LLM training and validation
+
+##### Data Sets
+- [DataSets](./basic_pytorch/datasets.md): a list of links for popular data sets used for LLM training and validation
 are provided.
 
 ### Distributed Pytorch - Fairscale
@@ -31,9 +51,9 @@ framework to support Pytorch run over distributed GPUs. The framework library is
 open source project from Meta. The github link is 
 [here](https://github.com/facebookresearch/fairscale)
 
-### Advanced Pytorch
+### Advanced Pytorch Topics
 
-- [Torch Graph](./advanced_pytorch/group.md)
+- [Model Format and Exchange](./advanced_pytorch/group.md)
 - [Torch Script](./advanced_pytorch/script.md)
 - [PyTorch C++](./advanced_pytorch/cpp.md)
 
@@ -43,8 +63,8 @@ to pretrain, finetune and deploy AI models. The github link is
 [here](https://github.com/Lightning-AI/pytorch-lightning). 
 
 
-### LLM HPC - Nvidia AI Modules
-##### cuda Grapu
+### LLM HPC - Nvidia AI Tools
+##### cuda Graph
 
 ##### cuDNN
 
