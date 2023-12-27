@@ -31,7 +31,7 @@ computation.
 
 ##### Pytorch as a tensor library
 - [Tensor](./basic_pytorch/tensor.md)
-- [Neural Network Model](./basic_pytorch/model.md)
+- [Model](./basic_pytorch/model.md)
 
 ##### Pytorch with Autograd
 - [Gradient](./basic_pytorch/gradient.md)
