@@ -157,3 +157,19 @@ APIs to access a Module's state
    Module.get_parameter(target_name)    # Returns the parameter given by the fully qualified name path
 ```
 ##### Hooks
+torch.nn.Module hook framework provides a way to monitor, trace and debug model training, validation and evaluation.
+Here are APIs.
+```python
+   # The hook will be called before each forward() invocation. prepend=False lets the hook be filred
+   # after all existing forward_pre hooks in the Module. Otherwise before all existing hooks.
+   # The hook signature: hook(module, args, kwargs) -> None or a tuple of modified input and kwargs
+   Module.register_forward_pre_hook(hook, *, prepend=False, with_kwargs=False)
+
+   # The hook will be called after forward() is invocated.
+   # the hook signature: hook(module, args, kwargs, output) -> None or modified output
+   Module.register_forward_hook(hook, *, prepend=False, with_kwargs=False, always_call=False)
+
+   Module.register_full_backward_pre_hook(hook, prepend=False)
+
+   Module.register_full_backward_hook(hook, prepend=False)
+```
