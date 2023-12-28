@@ -58,3 +58,30 @@ class SimpleLinearModel(torch.nn.Module):
     def forward(self, x):
         return self.weight.mm(x) + self.bias
 ```
+
+If we treat above SimpleLinearModel as a SimpleLinearLayer, we can form a multi-layer model, like
+```
+import torch
+
+class SimpleLinearLayer(torch.nn.Module):
+    def __init__(self, dim : int):
+        super().__init__()
+        weight_param = torch.nn.parameter.Parameter(torch.ones(dim, dim))
+        bias_param = torch.nn.parameter.Parameter(torch.zeros(dim, 1))
+        self.register_parameter("weight", weight_param)
+        self.register_parameter("bias", bias_param)
+
+    def forward(self, x):
+        return self.weight.mm(x) + self.bias
+
+class SimpleLinearModel(torch.nn.Module):
+    def __init__(self, dim : int):
+        super().__init__()
+        layer0 = SimpleLinearLayer(dim)
+        self.add_module("layer0", layer0)
+        layer1 = SimpleLinearLayer(dim)
+        self.add_module("layer1", layer1)
+    def forward(self, x):
+        return self.layer1(self.layer0(x))
+```
+
