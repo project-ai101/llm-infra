@@ -100,6 +100,7 @@ different devices are,
    cuda(device=None)
    ipu(device=None)
    xpu(device-None)
+   share_memory()
 ```
 
 ##### Persistence (Serializatoin and Deserialization)
@@ -123,11 +124,36 @@ the data type can be 16-bits float or 32-bits float.  Various data types have bi
 computation precision, computation performance and computation cost. Here are APIs to cast the state data 
 to various data type,
 ```python
-   float()
-   bfloat16()
-   double()
-   half()
-   to(dtype)
+   Module.float()
+   Module.bfloat16()
+   Module.double()
+   Module.half()
+   Module.to(dtype)
 ```
 ##### Tree structure traverse
+A complicated model could have many layers and each layer could have different Modules. How to traverse all
+Modules within a model is very important for both debugging and validation. Pytorch provides a set of APIs to
+serve this purpose.
+
+The APIs to navigate Modules.
+```python
+   Module.children()        # Returns an iterator of its immediate children Modules. This allows layer by layer
+                            # travers
+   Module.named_children()  # Returns the same immediate children modules as children() but with names too
+   Module.modules()         # Returns an interator for all Modules in the model.
+   Module.named_modules()   # Returns the same all Modules as modules() but with names too
+```
+
+The API to get a submodule with a full qualified target name
+```python
+   Module.get_submodule(target_name) -> torch.nn.Module
+```
+
+APIs to access a Module's state
+```python
+   Module.parameters(recurse=True)      # Returns an iterator for all parameters in this module. If recurse=True,
+                                        # all pararmeters in submodules are included.
+   Module.named_parameters()            # Returns the same all parameters as parameters() but with names too.
+   Module.get_parameter(target_name)    # Returns the parameter given by the fully qualified name path
+```
 ##### Hooks
