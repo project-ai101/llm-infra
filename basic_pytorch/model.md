@@ -6,7 +6,7 @@ the set of torch.nn.Module objects form a tree structure with the model Module a
 tutorial section, a close look of the torch.Module has been paid attention.
 
 
-### torch.nn.Module
+### Define a model as a subclass of torch.nn.Module
 The pytorch class Module is defined in [torch.nn package](https://pytorch.org/docs/stable/generated/torch.nn.Module.html#torch.nn.Module). To 
 define a module, one just need to extend the torch.nn.Module class and implement two methods,
 ```python
@@ -59,7 +59,10 @@ class SimpleLinearModel(torch.nn.Module):
         return self.weight.mm(x) + self.bias
 ```
 
-If we treat above SimpleLinearModel as a SimpleLinearLayer, we can form a multi-layer model, like
+With torch.nn.parameter.Parameter, the pytorch Module framework allows us
+to retrieve it with its name and save it into persistent media. Further, 
+if the SimpleLinearModel is considered as a SimpleLinearLayer, 
+a simple multi-layer model can be defined as following,
 ```
 import torch
 
@@ -81,7 +84,16 @@ class SimpleLinearModel(torch.nn.Module):
         self.add_module("layer0", layer0)
         layer1 = SimpleLinearLayer(dim)
         self.add_module("layer1", layer1)
+
     def forward(self, x):
         return self.layer1(self.layer0(x))
 ```
+### torch.nn.Module APIs
+For the comprehensive Module APIs, one can reference to the 
+[pytorch link](https://pytorch.org/docs/stable/generated/torch.nn.Module.html#torch.nn.Module).
 
+##### Storage location movement
+##### Persistence (Serializatoin and Deserialization)
+##### Datatype Conversion
+##### Tree structure traverse
+##### Hooks
