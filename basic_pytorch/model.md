@@ -93,7 +93,41 @@ For the comprehensive Module APIs, one can reference to the
 [pytorch link](https://pytorch.org/docs/stable/generated/torch.nn.Module.html#torch.nn.Module).
 
 ##### Storage location movement
+A pytorch model can be executed in CPUs, or GPU, or IPU, or XPU. The APIs to move a model to
+different devices are,
+```python
+   cpu()
+   cuda(device=None)
+   ipu(device=None)
+   xpu(device-None)
+```
+
 ##### Persistence (Serializatoin and Deserialization)
+From the model definitions, one may notice that the most important things of a model are its
+attributes, such as, weight parameters, bias parameters, etc. Also, they are dynamical. So,
+APIs to save and retrieve them are quite essential. Here they are,
+```python
+    state_dict(*, prefix: str = '', keep_vars: bool = False) -> Dict[str, Any]
+    load_state_dict(state_dict, strict=True,assign=False)
+```
+The first API, state_dict(), returns the current state of the model as a dictionary object. Then, 
+the dictionary object can be saved into a persistent media, such as, a disk file, or send to different
+address space (aka, processes) via inter-process communication. 
+
+The second API, load_state_dict(), loads the data in the dictionary data, state_dict, into the model. 
+The dictionary data, state_dict, could be loaded from a persistence media, such as a dick file, or from
+a remote process via inter-process communication, such as, TCP/IP, etc.
 ##### Datatype Conversion
+The state data of a model can be a different data type, such as, float, double, int. Even for float, 
+the data type can be 16-bits float or 32-bits float.  Various data types have big impact on the memory usage, 
+computation precision, computation performance and computation cost. Here are APIs to cast the state data 
+to various data type,
+```python
+   float()
+   bfloat16()
+   double()
+   half()
+   to(dtype)
+```
 ##### Tree structure traverse
 ##### Hooks
