@@ -48,10 +48,10 @@ Now, let's look a simple trainable or learnable model.
 import torch
 
 class SimpleLinearModel(torch.nn.Module):
-    def __init__(self):
+    def __init__(self, dim : int):
         super().__init__()
-        weight_param = torch.nn.parameter.Parameter(torch.ones(3, 3))
-        bias_param = torch.nn.parameter.Parameter(torch.zeros(3, 1))
+        weight_param = torch.nn.parameter.Parameter(torch.ones(dim, dim))
+        bias_param = torch.nn.parameter.Parameter(torch.zeros(dim, 1))
         self.register_parameter("weight", weight_param)
         self.register_parameter("bias", bias_param)
 
