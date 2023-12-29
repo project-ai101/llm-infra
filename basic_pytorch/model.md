@@ -166,10 +166,30 @@ Here are APIs.
    Module.register_forward_pre_hook(hook, *, prepend=False, with_kwargs=False)
 
    # The hook will be called after forward() is invocated.
-   # the hook signature: hook(module, args, kwargs, output) -> None or modified output
+   # The hook signature: hook(module, args, kwargs, output) -> None or modified output
    Module.register_forward_hook(hook, *, prepend=False, with_kwargs=False, always_call=False)
 
+   # The hook will be invoked before the gradients of the module are computed.If the gradients
+   # of the module are not computed, the hook will not be invoked.
+   # The hook signature: hook(module, grad_output) -> tuple[Tensor] or None
    Module.register_full_backward_pre_hook(hook, prepend=False)
 
+   # The hook will be invoked after the gradients of the module are computed.
+   # The hook signature: hook(module, grad_input, grad_output) -> tuple(Tensor) or None
    Module.register_full_backward_hook(hook, prepend=False)
 ```
+
+##### Modes
+
+A torch.nn.Module can be in one of folllowing modes,
+```
+   Evaluation,
+   Training
+```
+
+The APIs to change a Module's mode are,
+```python
+   Module.eval()           # set the module in evaluation mode. it is equivalent with Module.train(False)
+   Module.train(mode=True) # set the module in training mode=True otherwise set it in evaluation mode
+```
+   
