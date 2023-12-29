@@ -193,3 +193,12 @@ The APIs to change a Module's mode are,
    Module.train(mode=True) # set the module in training mode=True otherwise set it in evaluation mode
 ```
    
+### Build Large Model
+
+To build a large and complicated model, pytorch provides a set of Module containers and pre-defined Neural Network layers.
+In this section, we will review the APIs related LLMs in the both categories. For the details of both containers and
+layers, one may refer to the pytorch [torch.nn](https://pytorch.org/docs/stable/nn.html#) link.
+
+##### Module Containers
+
+##### Neural Network Layters
