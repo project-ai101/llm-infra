@@ -89,10 +89,12 @@ class SimpleLinearModel(torch.nn.Module):
         return self.layer1(self.layer0(x))
 ```
 ### torch.nn.Module APIs
+
 For the comprehensive Module APIs, one can reference to the 
 [pytorch link](https://pytorch.org/docs/stable/generated/torch.nn.Module.html#torch.nn.Module).
 
 ##### Storage location movement
+
 A pytorch model can be executed in CPUs, or GPU, or IPU, or XPU. The APIs to move a model to
 different devices are,
 ```python
@@ -104,6 +106,7 @@ different devices are,
 ```
 
 ##### Persistence (Serializatoin and Deserialization)
+
 From the model definitions, one may notice that the most important things of a model are its
 attributes, such as, weight parameters, bias parameters, etc. Also, they are dynamical. So,
 APIs to save and retrieve them are quite essential. Here they are,
@@ -119,6 +122,7 @@ The second API, load_state_dict(), loads the data in the dictionary data, state_
 The dictionary data, state_dict, could be loaded from a persistence media, such as a dick file, or from
 a remote process via inter-process communication, such as, TCP/IP, etc.
 ##### Datatype Conversion
+
 The state data of a model can be a different data type, such as, float, double, int. Even for float, 
 the data type can be 16-bits float or 32-bits float.  Various data types have big impact on the memory usage, 
 computation precision, computation performance and computation cost. Here are APIs to cast the state data 
@@ -131,6 +135,7 @@ to various data type,
    Module.to(dtype)
 ```
 ##### Tree structure traverse
+
 A complicated model could have many layers and each layer could have different Modules. How to traverse all
 Modules within a model is very important for both debugging and validation. Pytorch provides a set of APIs to
 serve this purpose.
@@ -157,6 +162,7 @@ APIs to access a Module's state
    Module.get_parameter(target_name)    # Returns the parameter given by the fully qualified name path
 ```
 ##### Hooks
+
 torch.nn.Module hook framework provides a way to monitor, trace and debug model training, validation and evaluation.
 Here are APIs.
 ```python
@@ -200,6 +206,7 @@ In this section, we will review the APIs related LLMs in the both categories. Fo
 layers, one may refer to the pytorch [torch.nn](https://pytorch.org/docs/stable/nn.html#) link.
 
 ##### Module Containers
+
 Since a Module can be nested within another Module, a generalization of such nesting behaviors can reuse the code development.
 Three Module container Modules are provided in pytorch.
 ```pytorch
@@ -213,11 +220,13 @@ the submodules' forward() method but ModuleList only provide access to the order
 
 ModuleDict is an ordered dictionary data structure of submodules with respect to the order of insertion.
 ##### Neural Network Layers
+
 Pytorch provides a set of pre-defined neural network layers. For the details of these layers, one may refer to 
 [torch.nn](https://pytorch.org/docs/stable/nn.html#). Here, we will review a few of them which are highly related
 to LLM.
 
 ###### Linear Layers
+
 The torch.nn.Linear implements the linear transform,
 ```math
     y = x A^{T}.
@@ -230,6 +239,7 @@ A Linear object has two trainable variables, weight and bias. If the bias=False 
 invocation, the bias variable is not learnable. 
 
 ###### Non-linear Activations
+
 ```python
    class torch.nn.ELU(alpha=1.0, inplace=False)
 ```
@@ -280,6 +290,7 @@ implements the following function,
    Softmax(x_{i}) = \frac{exp(x_{i})}{\sum_{j}exp(x_{j})}
 ```
 ###### Distance Functions
+
 ```python
    torch.nn.PairwiseDistance(p=2.0, eps=1e-06, keepdim=False)
 ```
@@ -296,3 +307,4 @@ where
 ```
 
 ###### Loss Functions
+
