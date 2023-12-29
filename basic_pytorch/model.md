@@ -200,5 +200,16 @@ In this section, we will review the APIs related LLMs in the both categories. Fo
 layers, one may refer to the pytorch [torch.nn](https://pytorch.org/docs/stable/nn.html#) link.
 
 ##### Module Containers
+Since a Module can be nested within another Module, a generalization of such nesting behaviors can reuse the code development.
+Three Module container Modules are provided in pytorch.
+```pytorch
+   torch.nn.Sequential(*args: Module)
+   torch.nn.Sequential(arg: OrderedDict[str, Module])
+   torch.nn.ModuleList(modules=None)
+   torch.nn.ModuleDict(modules=None)
+```
+The difference between Sequential and ModuleList is that Sequential.forward() shall cascadely invoke 
+the submodules' forward() method but ModuleList only provide access to the ordered list of submodules.
 
+ModuleDict is an ordered dictionary data structure of submodules with respect to the order of insertion.
 ##### Neural Network Layters
