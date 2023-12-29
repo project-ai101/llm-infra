@@ -255,3 +255,20 @@ implements the element-wase function,
 ```math
    Sigmoid(x) = \sigma (x) = \frac{1}{1 + exp(-x)}
 ```
+```python
+   class torch.nn.ReLU(inplace=False)
+```
+implements the element-wise function,
+```math
+   ReLU(x) = (x)^{+} = max(0, x)
+```
+```python
+   class torch.nn.Threshold(threshold, value, inplace=False)
+```
+implements the element-wise function,
+```math
+   y = \begin{cases}
+        x, \hspace {2cm} if \quad x > threshold \\
+        value, \hspace {1cm} otherwise
+       \end{cases}
+```
