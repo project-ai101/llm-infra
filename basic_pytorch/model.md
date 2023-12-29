@@ -228,3 +228,12 @@ The constructor signature is
 ```
 A Linear object has two trainable variables, weight and bias. If the bias=False in the constructor
 invocation, the bias variable is not learnable. 
+
+###### Non-linear Activations
+nn.ELU implements element-wise Exponential Linear Unit(ELU) function,
+```math
+    EUL(x) = \begin{cases}
+             x, \hspace{4.2cm} if \quad x > 0 \\
+             \alpha * (exp(x) - 1), \hspace {1cm} if \quad x \le 0
+             \end{cases}
+```
