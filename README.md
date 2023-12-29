@@ -39,7 +39,6 @@ computation.
 
 ##### Model Training
 - [Model Training](./basic_pytorch/model_training.md)
-- [Graph Model Format](./basic_pytorch/graph_model_format.md)
 
 ##### Data Sets
 - [DataSets](./basic_pytorch/datasets.md): a list of links for popular data sets used for LLM training and validation
