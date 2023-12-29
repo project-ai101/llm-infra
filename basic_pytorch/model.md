@@ -212,4 +212,19 @@ The difference between Sequential and ModuleList is that Sequential.forward() sh
 the submodules' forward() method but ModuleList only provide access to the ordered list of submodules.
 
 ModuleDict is an ordered dictionary data structure of submodules with respect to the order of insertion.
-##### Neural Network Layters
+##### Neural Network Layers
+Pytorch provides a set of pre-defined neural network layers. For the details of these layers, one may refer to 
+[torch.nn](https://pytorch.org/docs/stable/nn.html#). Here, we will review a few of them which are highly related
+to LLM.
+
+###### Linear Layers
+The torch.nn.Linear implements the linear transform,
+```math
+    y = x A^{T}.
+```
+The constructor signature is
+```python
+   torch.nn.Linear(in_features, out_features, bias=True, device=None, dytpe=None)
+```
+A Linear object has two trainable variables, weight and bias. If the bias=False in the constructor
+invocation, the bias variable is not learnable. 
