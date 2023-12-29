@@ -230,10 +230,21 @@ A Linear object has two trainable variables, weight and bias. If the bias=False 
 invocation, the bias variable is not learnable. 
 
 ###### Non-linear Activations
-nn.ELU implements element-wise Exponential Linear Unit(ELU) function,
+```python
+   class torch.nn.ELU(alpha=1.0, inplace=False)
+```
+implements element-wise Exponential Linear Unit(ELU) function,
 ```math
     EUL(x) = \begin{cases}
              x, \hspace{4.2cm} if \quad x > 0 \\
              \alpha * (exp(x) - 1), \hspace {1cm} if \quad x \le 0
              \end{cases}
+```
+
+```python
+   class torch.nn.LogSigmoid(*args, **kwargs)
+```
+implemenst element-wise function,
+```math
+   LogSigmoid(x) = log\Big( \frac{1}{1+exp(-x)}\Big)
 ```
