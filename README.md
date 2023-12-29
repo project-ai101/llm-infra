@@ -44,7 +44,13 @@ computation.
 - [DataSets](./basic_pytorch/datasets.md): a list of links for popular data sets used for LLM training and validation
 are provided.
 
-### Distributed Pytorch - Fairscale
+### Distributed Pytorch
+
+##### torch.distributed
+
+##### torch Pipeline
+
+##### Fairscale
 For LLMs, the memory and computation capacity demands require many GPUs. Fairscale is 
 framework to support Pytorch run over distributed GPUs. The framework library is an
 open source project from Meta. The github link is 
@@ -55,6 +61,7 @@ open source project from Meta. The github link is
 - [Model Format and Exchange](./advanced_pytorch/group.md)
 - [Torch Script](./advanced_pytorch/script.md)
 - [PyTorch C++](./advanced_pytorch/cpp.md)
+- [PyTorch Quantization](./advanced_pytorch/quantization.md)
 
 ### LLM Automation - Pytorch Lightning
 Pytorch Lightning is an open source project to develop a deep learning framework 
