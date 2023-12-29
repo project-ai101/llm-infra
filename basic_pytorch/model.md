@@ -244,7 +244,14 @@ implements element-wise Exponential Linear Unit(ELU) function,
 ```python
    class torch.nn.LogSigmoid(*args, **kwargs)
 ```
-implemenst element-wise function,
+implements the element-wise function,
 ```math
    LogSigmoid(x) = log\Big( \frac{1}{1+exp(-x)}\Big)
+```
+```python
+   class torch.nn.Sigmoid(*args, **kwargs)
+```
+implements the element-wase function,
+```math
+   Sigmoid(x) = \sigma (x) = \frac{1}{1 + exp(-x)}
 ```
