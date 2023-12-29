@@ -272,3 +272,27 @@ implements the element-wise function,
         value, \hspace {1cm} otherwise
        \end{cases}
 ```
+```python
+   class torch.nn.Softmax(dim=None)
+```
+implements the following function,
+```math
+   Softmax(x_{i}) = \frac{exp(x_{i})}{\sum_{j}exp(x_{j})}
+```
+###### Distance Functions
+```python
+   torch.nn.PairwiseDistance(p=2.0, eps=1e-06, keepdim=False)
+```
+calculates the p-norm distances between input vectors, or columns of input matrics.
+The p-norm distance is given by,
+```math
+   dist(x, y) = ||x - y + \epsilon e||_{p}
+```
+where
+```math
+   ||x||_{p} = \Big(
+                 \sum_{i=1}^{n} |x_{i}|^{p}
+               \Big)^{1/p}
+```
+
+###### Loss Functions
