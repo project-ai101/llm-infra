@@ -27,7 +27,17 @@ computation.
 ##### LLM Comparison
 
 ##### Llama 
+To download Llama 2, one may send out the request to access the next version llama to meta via this [meta llama download link](https://ai.meta.com/resources/models-and-libraries/llama-downloads/).
+Then, an email from meta will have detail on how to get the final download links. In the request, it comes three sets of models to be chosen. One is the base model set. They are Llama 2 & Llama 2 Chat.
+- Llama 2 7B, 13B and 70B and Llama 2 Chat 7B, 13B and 70B models.
 
+The second set are Code Llama which have 12 models. The introduction can be found in this [link](https://ai.meta.com/blog/code-llama-large-language-model-coding/). The 12 models are
+- Code Llama 7B, 13B, 34B and 70B
+- Code Llama - Python 7B, 13B, 34B and 70B
+- Code Llama - Instruct 7B, 13B, 34B and 70B
+
+The third set is Llama Guard which a Llama 2 - 7B based instruction-tuned input-output safguard for human-AI converstaions. For more information about Llama Guard,
+one may refer to this [introduction link](https://ai.meta.com/research/publications/llama-guard-llm-based-input-output-safeguard-for-human-ai-conversations/).
 ##### Mistral
 
 ### Basic Pytorch
