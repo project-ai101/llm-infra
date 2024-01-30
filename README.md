@@ -20,7 +20,7 @@ computation.
 
 ### LLMs Overview
 
-##### Key Articles
+##### Technical Articles
 - The foundation for LLM is the transformer. One important article is [Attention is all your need](https://arxiv.org/abs/1706.03762)
 - One very important article for MoE (Mixture of Experts) is [Misture-of-Experts with Expert Choice Routing](https://arxiv.org/abs/2202.09368)
 - The technical specification of LLAMA 2 is [Llama 2: The Open Foundation and Fine-Tuned Chat Models](https://ai.meta.com/research/publications/llama-2-open-foundation-and-fine-tuned-chat-models/)
