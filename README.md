@@ -77,7 +77,7 @@ Training a LLM is a non-trivial task. From 1000 feet, training models shares som
 - [BERT LLM Training](./basic_pytorch/bert_training.md) A complete BERT model training implementation with Python and Pytorch from scratch. 
 
 ##### Data Sets
-- [DataSets within PyTorch](.basic_pytorch/pytorch_datasets.md): A brief description about datasets in PyTorch package.
+- [DataSets within PyTorch](./basic_pytorch/pytorch_datasets.md): A brief description about datasets in PyTorch package.
 - [Common Open Source DataSets](./basic_pytorch/common_datasets.md): A list of links for popular open source data sets used for LLM training and validation
 are provided.
 
