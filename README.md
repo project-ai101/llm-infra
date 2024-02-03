@@ -52,18 +52,30 @@ Mistral comes with two model Mistral 2B and Mistral 8X7B. Following links have b
 
 
 ##### Pytorch as a tensor library
-- [Tensor](./basic_pytorch/tensor.md)
-- [Model](./basic_pytorch/model.md)
+- [Tensor](./basic_pytorch/tensor.md) Some basic concepts, APIs and usage of torch.Tensor can be found in this tutorial.
+- [Model](./basic_pytorch/model.md) introduces how to use torch.Module to build a model and explores the properties of a model in PyTorch.
 
 ##### Pytorch with Autograd
-- [Gradient](./basic_pytorch/gradient.md)
-- [Autograd](./basic_pytorch/autograd.md)
+- [Gradient](./basic_pytorch/gradient.md) introduces the basic tensor gradient calculation.
+- [Autograd](./basic_pytorch/autograd.md) gives a tutorial on PyTorch AutoGrad usages
 
 ##### Model Training
-- [Model Training](./basic_pytorch/model_training.md)
+Training a LLM is a non-trivial task. From 1000 feet, training models shares some common steps. 
+1. Model Build,
+2. Loss Function Definition.
+3. Data Preparation:
+   3.1. Training Data;
+   3.2. Validation Data.
+4. Storage
+5. Execution.
+
+
+- [Linear Regression Model Training](./basic_pytorch/linear_regression_training.md) A simple example to demonstrate the whole flow of a model training.
+- [BERT LLM Training](./basic_pytorch/bert_training.md) A complete BERT model training implementation with Python and Pytorch from scratch. 
 
 ##### Data Sets
-- [DataSets](./basic_pytorch/datasets.md): a list of links for popular data sets used for LLM training and validation
+- [DataSets within PyTorch](..basic_pytorch/pytorch_datasets.md): A brief description about datasets in PyTorch package.
+- [Common Open Source DataSets](./basic_pytorch/common_datasets.md): a list of links for popular open source data sets used for LLM training and validation
 are provided.
 
 ### Distributed Pytorch
