@@ -61,15 +61,16 @@ Mistral comes with two model Mistral 2B and Mistral 8X7B. Following links have b
 
 ##### Model Training
 Training a LLM is a non-trivial task. From 1000 feet, training models shares some common steps. 
-1. Model Build
-2. Loss Function Definition
-3. Gradient Calculation
-4. Data Preparation
-   - Training Data
-   - Validation Data
-5. Storage
-6. Main Function
-7. Execution
+
+> 1. Model Build
+> 2. Loss Function Definition
+> 3. Gradient Calculation
+> 4. Data Preparation
+>>   - Training Data
+>>   - Validation Data
+> 5. Storage
+> 6. Main Function
+> 7. Execution
 
 
 - [Linear Regression Model Training](./basic_pytorch/linear_regression_training.md) A simple example to demonstrate the whole flow of a model training.
