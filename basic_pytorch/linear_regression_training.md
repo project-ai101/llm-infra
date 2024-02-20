@@ -25,7 +25,7 @@ let's GUESS that the datasets could follow the linear model,
 \hspace {6cm} \tilde y_i = \theta_0 + X_i \cdot \theta^T \hspace {3cm} (2)
 ```
 
-where $\theta_i \in R$ and $\theta =$ {$ \theta_1, \theta_2, ..., \theta_M$} $\in R^M$.
+where $\theta_i \in R$ and $\theta =\{ \theta_1, \theta_2, ..., \theta_M \} \in R^M$.
 
 ### Loss Function
 So far, the linear model (2) is just a conjesture that it may approximate the datasets X and Y. How do we know how good the approximation is?
