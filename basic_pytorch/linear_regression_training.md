@@ -25,7 +25,7 @@ let's GUESS that the datasets could follow the linear model,
 \hspace {6cm} \tilde y_i = \theta_0 + X_i \cdot \theta^T \hspace {3cm} (2)
 ```
 
-where $\theta_i \in R$ and $\theta = \{ \theta_1, \theta_2, ..., \theta_M \} \in R^M$.
+where $\theta_i \in R$ and $\theta =$ {$ \theta_1, \theta_2, ..., \theta_M$} $\in R^M$.
 
 ### Loss Function
 So far, the linear model (2) is just a conjesture that it may approximate the datasets X and Y. How do we know how good the approximation is?
@@ -36,6 +36,6 @@ estimated (or approximated) $\tilde Y = \{ \tilde y_1, ..., \tilde y_n \}$. Form
 \hspace {2cm} TSSE = \sum ^{n}_{i=1} (y_i - \tilde y_i)^2 = \sum ^n_{i=1} (y_i - \theta_0 - X_i \cdot \theta)^2 \hspace {1cm} (3)
 ```
 
-Now, our goal is to try to find good parameter values $\theta_0, theta_1, ..., \theta_M$ so that TSSE has a minimum. 
+Now, our goal is to try to find good parameter values {$\theta_0, \theta_1, ..., \theta_M$} so that TSSE has a minimum. 
 
 ### Calculate Gradients
