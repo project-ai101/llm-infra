@@ -79,3 +79,27 @@ optimizer = torch.optim.SGD(model.parameters(), lr=1e-2, momentum=0.9)
 optimizer.step()
 ```
 
+### Data Preparation
+
+In the real world, normally the data exist already. For tutorial purpose, we will generate data so that it is easy to demonstrate
+concepts and processes. Also, in the real world, there may not be any mathematical models existing behind the oberservation 
+data. Again, for tutorial purpose, we assume the "UNKNOWN" linear model is
+
+```math
+\hspace {6cm} y = 3.0 + 2.0 x_1 + (-1.5) x_2 + \epsilon \hspace {2cm} (5)
+```
+where $\epsilon$ represents the noise term.
+
+As a typical machine learning task, we need both a training dataset and a test dataset. Further, we use cross-validation to
+improve the quality of machine learning. We will sample the datasets to form many pairs of training datasets and test dataset. 
+At last, for each training dataset, we partitiion it into many small mini-patches. Here is the steps to prepare the data 
+for the linear regression machine learning task,
+
+- generate 360 raw data points in format of $x_{i, 1}, x_{i, 2}, y_i$
+- partition the raw data points into 6 datasets and dataset has 60 data points. Denote datasets as $DS_1, DS_2, DS_3, DS_4, DS_5, DS_6$.
+- choose one dataset as a test dataset and remaining as training datasets. We have 6 pairs of test and training datasets.
+- For each training dataset, parition it into 10 mini-patch. Each mini-patch has 6 datapoints.
+
+One remaining important data is to measure if training is approaching to an optimal solution. This can be done by checking
+the progress of MSEs. We set it to 0.01. This means when the MSE progress is less than 0.01, the training is already near an 
+optimal solution.
