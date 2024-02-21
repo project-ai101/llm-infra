@@ -103,3 +103,11 @@ for the linear regression machine learning task,
 One remaining important data is to measure if training is approaching to an optimal solution. This can be done by checking
 the progress of MSEs. We set it to 0.01. This means when the MSE progress is less than 0.01, the training is already near an 
 optimal solution.
+
+### Storage
+Since the sizes of both data and models are very small, we simply store them into files, called models.txt and raw_data.txt
+
+### Main
+
+### Execution
+
