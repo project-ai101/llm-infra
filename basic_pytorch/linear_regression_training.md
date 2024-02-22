@@ -25,13 +25,13 @@ let's GUESS that the datasets could follow the linear model,
 \hspace {6cm} \tilde y_i = b + X_i \cdot \theta^T \hspace {3cm} (2)
 ```
 
-where $\theta_i \in R$ and $\theta =\{ \theta_1, \theta_2, ..., \theta_M \} \in R^M$. Further more, for the demonstration purpose, we set M = 2.
+where $\theta_i \in R$ and $\theta =\{ \theta_1, \theta_2, ..., \theta_M \} \in R^M$. Further more, for the demonstration purpose, we set M = 5.
 
 Therefore, the model can be programmed as
 
 ```python
-input_dim = 2
-output_dim = 1
+input_features = 5
+output_features = 1
 model = torch.nn.Linear(input_dim, output_dim, bias = True, dtype = torch.float)
 ```
 
@@ -73,7 +73,7 @@ After output.backward() is called, the model parameter gradients are stored at m
 Now,we can use an optimizer to update the model.parameters(). One very common optimizer is SGD (Stochastic Gradient Descend).
 
 ```pyhton
-optimizer = torch.optim.SGD(model.parameters(), lr=1e-2, momentum=0.9)
+optimizer = torch.optim.SGD(model.parameters(), lr=1e-3, momentum=0.9)
 
 #update the parameters
 optimizer.step()
@@ -86,7 +86,7 @@ concepts and processes. Also, in the real world, there may not be any mathematic
 data. Again, for tutorial purpose, we assume the "UNKNOWN" linear model is
 
 ```math
-\hspace {6cm} y = 3.0 + 2.0 x_1 + (-1.5) x_2 + \epsilon \hspace {2cm} (5)
+\hspace {6cm} y = 3.0 + 2.0 x_1 -1.5 x_2 + 3.0x_3 -0.5x_4 + 0.3x_5 + \epsilon \hspace {2cm} (5)
 ```
 where $\epsilon$ represents the noise term.
 
@@ -95,7 +95,7 @@ improve the quality of machine learning. We will sample the datasets to form man
 At last, for each training dataset, we partitiion it into many small mini-patches. Here is the steps to prepare the data 
 for the linear regression machine learning task,
 
-- generate 360 raw data points in format of $x_{i, 1}, x_{i, 2}, y_i$
+- generate 360 raw data points in format of $x_{i, 1}, x_{i, 2}, x_{i, 3}, x_{i, 4}, x_{i, 5}, y_i$
 - partition the raw data points into 6 datasets and dataset has 60 data points. Denote datasets as $DS_1, DS_2, DS_3, DS_4, DS_5, DS_6$.
 - choose one dataset as a test dataset and remaining as training datasets. We have 6 pairs of test and training datasets.
 - For each training dataset, parition it into 10 mini-patch. Each mini-patch has 6 datapoints.
@@ -105,7 +105,7 @@ the progress of MSEs. We set it to 0.01. This means when the MSE progress is les
 optimal solution.
 
 ### Storage
-Since the sizes of both data and models are very small, we simply store them into files, called models.txt and raw_data.txt
+Since the size of the observation data is relative small, stored them into a file called raw_data.txt
 
 ### Main
 
