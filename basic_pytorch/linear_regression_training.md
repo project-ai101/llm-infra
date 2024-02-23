@@ -115,8 +115,10 @@ The training data log is saved in train_log.txt. The column definitions in the t
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mini_batch_sequence number,  training mse (mean square error), bias, $\theta_1, \theta_2, \theta_3, \theta_4, \theta_5$
 
 The linear regression learning does converge with Training MSE = 0.001, Bias = 3.056 and 
-$\theta_1 = 2.003$,$\theta_2 = -1.475$, $\theta_3 = 2.959$, $\theta_4 = -0.477$, $\theta_5 = 0.29$
+$\theta_1 = 2.003$,$\theta_2 = -1.475$, $\theta_3 = 2.959$, $\theta_4 = -0.477$, $\theta_5 = 0.29$.
        
 The evaluation test data is saved in eval_log.txt. The column definitions in the eval_log.txt is
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; teset_batch_sequence number, test mse (mean square error), bias,  $\theta_1, \theta_2, \theta_3, \theta_4, \theta_5$
+
+The test errors also converge to 0.002.
