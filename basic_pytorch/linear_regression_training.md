@@ -110,4 +110,10 @@ Since the size of the observation data is relative small, stored them into a fil
 ### Main
 
 ### Execution
+The training data log is saved in train_log.txt. The column definitions in the train_log.txt is
 
+       mini_batch_sequence number,  training mse (mean square error), bias, x1, x2, x3, x4, x5
+       
+The evaluation test data is saved in eval_log.txt. The column definitions in the eval_log.txt is
+
+       teset_batch_sequence number, test mse (mean square error), bias, x1, x2, x3, x4, x5
