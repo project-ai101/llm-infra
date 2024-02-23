@@ -96,9 +96,10 @@ At last, for each training dataset, we partitiion it into many small mini-patche
 for the linear regression machine learning task,
 
 - generate 360 raw data points in format of $x_{i, 1}, x_{i, 2}, x_{i, 3}, x_{i, 4}, x_{i, 5}, y_i$
-- partition the raw data points into 6 datasets and dataset has 60 data points. Denote datasets as $DS_1, DS_2, DS_3, DS_4, DS_5, DS_6$.
+- partition the raw data points into 6 datasets and each dataset has 60 data points. Denote datasets as $DS_1, DS_2, DS_3, DS_4, DS_5, DS_6$.
+- further, each training dataset is partitioned into 6 mini-batch datasets and each mini-batch dataset has 10 data points.
 - choose one dataset as a test dataset and remaining as training datasets. We have 6 pairs of test and training datasets.
-- For each training dataset, parition it into 10 mini-patch. Each mini-patch has 6 datapoints.
+- run the training for 18 epochs.
 
 One remaining important data is to measure if training is approaching to an optimal solution. This can be done by checking
 the progress of MSEs. We set it to 0.01. This means when the MSE progress is less than 0.01, the training is already near an 
