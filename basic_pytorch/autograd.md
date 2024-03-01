@@ -9,6 +9,16 @@ Lets start from a simple model,
   z &= g(y) = y_1^2 + y_2^2.
 \end {split}
 ```
+The full composition function 
+```math
+ g \circ f : R^3 \to R$
+```
+can be constructed as a graph with computation nodes which include variable nodes (such as x, y, z, matrix A and bias b) and operation nodes (such as matrix-vector multiplication, 
+vector plus, and square-sum operation nodes). All the variable nodes are not only able to hold the forward compuation values but also store
+the gradients with respect the final value z when the backward propagation function backward() is called. Therefore in pytorch, all computation nodes (aka Tensors)
+have two storage, their values and gradients. The gradients are accessed by the attribute Tensor.grad. 
+
+
 The python implementation with pytorch is following
 ```python
 import torch
