@@ -27,6 +27,9 @@ computation.
 - The technical specification of LLAMA 2: [Llama 2: The Open Foundation and Fine-Tuned Chat Models](https://ai.meta.com/research/publications/llama-2-open-foundation-and-fine-tuned-chat-models/)
 - MoE (Mixture of Experts): [Misture-of-Experts with Expert Choice Routing](https://arxiv.org/abs/2202.09368)
 
+##### Tutorial Links
+- Andrej Karpathy's Youtube Link: [Let's Build GPT: from scratch, in code, spelled out](https://www.youtube.com/watch?v=kCc8FmEb1nY)
+- Andrej Karpathy's llm.c github Link: [~2000 lines of C code for training GPT-2](https://github.com/karpathy/llm.c)
 ##### Llama 
 To download Llama 2, one may send out the request to access the next version llama to meta via this [meta llama download link](https://ai.meta.com/resources/models-and-libraries/llama-downloads/).
 Then, an email from meta will have detail on how to get the final download links. In the request, it comes three sets of models to be chosen. One is the base model set. They are Llama 2 & Llama 2 Chat.
@@ -39,6 +42,9 @@ The second set are Code Llama which have 12 models. The introduction can be foun
 
 The third set is Llama Guard which a Llama 2 - 7B based instruction-tuned input-output safguard for human-AI converstaions. For more information about Llama Guard,
 one may refer to this [introduction link](https://ai.meta.com/research/publications/llama-guard-llm-based-input-output-safeguard-for-human-ai-conversations/).
+
+Llama 3 - 8B and 70B models are available. To download the models (aka model weights), you may follow the same steps as for downloading Llama2 above. The Llama 3
+inference model is hosted at the [github site] (https://github.com/meta-llama/llama3). The LLama 3 Meta page is [here](https://llama.meta.com/llama3/).
 ##### Mistral
 Mistral comes with two model Mistral 2B and Mistral 8X7B. Following links have brief introduction of them and links to download and other resources.
 
