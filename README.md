@@ -4,7 +4,8 @@
 LLM-Infra respository provides in-depth tutorials and examples on LLM training and inference infrastructure in one place
 for people to learn LLM based AI. The areas which I mainly focus on are Pytorch, Fairscale, Nvidia AI packages 
 (cuDNN, tensorRT, Megatron-LM) and HuggingFace.
-Also, only open source LLMs, such as, LLAMA 2 from Meta and Mistral LLMs from Mistral, are extensively used 
+Also, only open source LLMs, such as, LLAMA 2 and Llama 3 from Meta, Mistral LLMs, Gemma from Google 
+and Phi from Microsoft from Mistral, are extensively used 
 in the discussion. Open source LLMs allow us to look into the details of LLMs.
 
 In LLMs, tensor computation is the fundamental tool to turn LLMs into reality. For tensor computation,
@@ -50,6 +51,14 @@ Mistral comes with two model Mistral 2B and Mistral 8X7B. Following links have b
 
 - [Mistral 7B in short](https://mistral.ai/news/announcing-mistral-7b/)
 - [Mistral 8X7B: Mixtral of Experts, A high quality Sparse Mixture\-of\-Experts](https://mistral.ai/news/mixtral-of-experts/)
+
+##### Gemma
+Gemma Inference Github Repository
+- [Gemma Pytorch](https://github.com/google/gemma_pytorch)
+- [Gemma C++](https://github.com/google/gemma.cpp)
+
+##### Phi
+- [Microsoft Phi-Cookbook](https://github.com/microsoft/Phi-3CookBook)
 
 ##### LLM Comparison
 
