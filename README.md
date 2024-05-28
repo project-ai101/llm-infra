@@ -145,3 +145,34 @@ to pretrain, finetune and deploy AI models. The github link is
 
 
 ### LLM Community - HuggingFace
+
+HuggingFace is a LLM community which hosts many models, datasets and others. To use the resources,
+you may need to join the HuggingFace community first. The website of Huggingface is [huggingface.co](https://huggingface.co).
+
+##### Download models from HuggingFace
+If you want to run your models locally, you need to download them from huggingface website. One way is to use huggingface-cli
+commnad. For the detail information about huggingface-cli, one may look into this [webpage](https://huggingface.co/docs/huggingface_hub/en/guides/cli).
+Here, the command usage over Ubuntu 22.04 is instroduced briefly.
+
+The command to install huggingface-cli command utility is
+```
+    pip install -U "huggingface_hub[cli]"
+```
+
+After the command util is installed, you may use the help command to list the supported huggingface-cli commands.
+```
+    huggingface-cli --help
+```
+
+To login into the huggingface via huggingface-cli, one may need to have the access token which is stored at
+https://huggingface.co/settings/token/
+
+With the token generated to you, you can login into the huggingface site by
+```
+    huggingface-cli login
+```
+
+After login into the huggingface, one can download any supported models, for example,
+```
+    huggingface-cli download google/codegemma-7b --repo-type=model
+```
