@@ -30,7 +30,7 @@ computation.
 
 ##### Tutorial Links
 - Andrej Karpathy's Youtube Link: [Let's Build GPT: from scratch, in code, spelled out](https://www.youtube.com/watch?v=kCc8FmEb1nY)
-- Andrej Karpathy's Youtube Link: [Let's reproduce GPT-2(124M)](https://www.youtube.com/watch?v=l8pRSuU81PU)
+- Andrej Karpathy's Youtube Link: [Let's reproduce GPT-2(124M)](https://www.youtube.com/watch?v=l8pRSuU81PU). The source code of OpenAI GPT-2 in github is [here](https://github.com/openai/gpt-2)
 - Andrej Karpathy's llm.c github Link: [~2000 lines of C code for training GPT-2](https://github.com/karpathy/llm.c)
 ##### Llama 
 To download Llama 2, one may send out the request to access the next version llama to meta via this [meta llama download link](https://ai.meta.com/resources/models-and-libraries/llama-downloads/).
