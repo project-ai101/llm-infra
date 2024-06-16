@@ -1,5 +1,5 @@
 # llm-infra
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -- Author: Bin Tan
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -- Author: Bin Tan, [my linkedin](https://www.linkedin.com/in/bin-tan-3145721/)
 
 LLM-Infra respository provides in-depth tutorials and examples on LLM training and inference infrastructure in one place
 for people to learn LLM based AI. The areas which I mainly focus on are Pytorch, Fairscale, Nvidia AI packages 
