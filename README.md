@@ -110,9 +110,18 @@ are provided.
 
 ### Distributed Pytorch
 
-##### torch.distributed
+##### DataParallel and DistributedDataParallel
+torch.nn.DataParallel parallelizes the application of the given torch.nn.Module by splitting the input accross the specified devices by chunking in the batch dimension. This means that th e Module is "replicated" on each devices. This containers has single process and multiple threads.
 
-##### torch Pipeline
+torch.nn.parallel.DistributedDataParallel (DDP) provides data parallelism by synchronizing gradients across each model replica. It is users' respobilities to chunk or shard the input across participating GPUs. DDP is built based torch.distributed. So, torch.distributed must be initialized by torch.distributed.init_process_group() before create DDP.
+
+In general, DDP is faster than DataParallel. Even for a single node, DDP is recommended.
+
+##### Fully Sharded Data-Parallel Training (FSDP)
+
+##### Tensor Parallel
+
+##### Pipeline Parallel
 
 ##### Fairscale
 For LLMs, the memory and computation capacity demands require many GPUs. Fairscale is 
