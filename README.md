@@ -42,20 +42,34 @@ computation.
 ### Open Source Models
 
 ##### Meta Llama 
+<ins>Llama 2</ins>
+
 To download Llama 2, one may send out the request to access the next version llama to meta via this [meta llama download link](https://ai.meta.com/resources/models-and-libraries/llama-downloads/).
 Then, an email from meta will have detail on how to get the final download links. In the request, it comes three sets of models to be chosen. One is the base model set. They are Llama 2 & Llama 2 Chat.
 - Llama 2 7B, 13B and 70B and Llama 2 Chat 7B, 13B and 70B models.
+
+<ins>Code Llama</ins>
 
 The second set are Code Llama which have 12 models. The introduction can be found in this [link](https://ai.meta.com/blog/code-llama-large-language-model-coding/). The 12 models are
 - Code Llama 7B, 13B, 34B and 70B
 - Code Llama - Python 7B, 13B, 34B and 70B
 - Code Llama - Instruct 7B, 13B, 34B and 70B
 
+<ins>LLama Guard</ins>
+
 The third set is Llama Guard which a Llama 2 - 7B based instruction-tuned input-output safguard for human-AI converstaions. For more information about Llama Guard,
 one may refer to this [introduction link](https://ai.meta.com/research/publications/llama-guard-llm-based-input-output-safeguard-for-human-ai-conversations/).
 
+<ins> Llama 3 </ins>
+
 Llama 3 - 8B and 70B models are available. To download the models (aka model weights), you may follow the same steps as for downloading Llama2 above. The Llama 3
 inference model is hosted at the [github site] (https://github.com/meta-llama/llama3). The LLama 3 Meta page is [here](https://llama.meta.com/llama3/).
+
+<ins> Llama 3.1 </ins>
+
+
+<ins> Llama 3.2 </ins>
+
 
 ##### Mistral
 Mistral comes with two model Mistral 2B and Mistral 8X7B. Following links have brief introduction of them and links to download and other resources.
