@@ -23,6 +23,7 @@ computation.
 
 ##### Technical Articles
 - The foundation for LLM is the transformer: [Attention is all your need](https://arxiv.org/abs/1706.03762)
+- Word Embedding: [Efficient Estimation of Word Representations in Vector Space](https://arxiv.org/abs/1301.3781)
 - Transformer optimizations: [FlashAttention](https://arxiv.org/abs/2205.14135), [FlashAttention-2](https://tridao.me/publications/flash2/flash2.pdf), [FlashAttention-3](https://tridao.me/publications/flash3/flash3.pdf), [PageAttention](https://arxiv.org/abs/2309.06180), [vAttention](https://arxiv.org/pdf/2405.04437v1)
 - Position Encoding: [RoFormer: Enhanced Transformer with Rotary Position Embedding](https://arxiv.org/abs/2104.09864)
 - Quantization: [bitsandbytes](https://arxiv.org/abs/2208.07339), [GPTQ](https://arxiv.org/abs/2210.17323), [AWQ](https://arxiv.org/abs/2306.00978), [SqueezeLLM](https://arxiv.org/abs/2306.07629)
