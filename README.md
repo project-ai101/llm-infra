@@ -41,7 +41,7 @@ computation.
 
 ### Open Source Models
 
-##### Llama 
+##### Meta Llama 
 To download Llama 2, one may send out the request to access the next version llama to meta via this [meta llama download link](https://ai.meta.com/resources/models-and-libraries/llama-downloads/).
 Then, an email from meta will have detail on how to get the final download links. In the request, it comes three sets of models to be chosen. One is the base model set. They are Llama 2 & Llama 2 Chat.
 - Llama 2 7B, 13B and 70B and Llama 2 Chat 7B, 13B and 70B models.
@@ -56,18 +56,19 @@ one may refer to this [introduction link](https://ai.meta.com/research/publicati
 
 Llama 3 - 8B and 70B models are available. To download the models (aka model weights), you may follow the same steps as for downloading Llama2 above. The Llama 3
 inference model is hosted at the [github site] (https://github.com/meta-llama/llama3). The LLama 3 Meta page is [here](https://llama.meta.com/llama3/).
+
 ##### Mistral
 Mistral comes with two model Mistral 2B and Mistral 8X7B. Following links have brief introduction of them and links to download and other resources.
 
 - [Mistral 7B in short](https://mistral.ai/news/announcing-mistral-7b/)
 - [Mistral 8X7B: Mixtral of Experts, A high quality Sparse Mixture\-of\-Experts](https://mistral.ai/news/mixtral-of-experts/)
 
-##### Gemma
+##### Google Gemma
 Gemma Inference Github Repository
 - [Gemma Pytorch](https://github.com/google/gemma_pytorch)
 - [Gemma C++](https://github.com/google/gemma.cpp)
 
-##### Phi
+##### Microsoft Phi
 Microsoft released following Phi 3 open models
 - Phi 3 Mini (4K Instruct and 12K Instruct)
 - Phi 3 Small (8K Instruct and 128K Instruct)
@@ -77,12 +78,15 @@ Microsoft released following Phi 3 open models
 [Microsoft Phi-Cookbook](https://github.com/microsoft/Phi-3CookBook) is the Macrosoft Phi github repository. To download models, we can get them from Huggingface with huggingface-cli commands.
 If you need information on how to install huggingface-cli and how to use the command, please follow the [link](https://huggingface.co/docs/huggingface_hub/guides/cli)
 
+Microsoft released following Phi 3.5 open models
+- Phi 3.5 Mini (128K Instruct)
+- Phi 3.5 Vision (128K Instruct)
+- Phi 3.5 MoE (128K Instruct, 16 x 3.8B parameters with 6.6 active parameters)
 
 ##### LLM Comparison
 
 
 ### Basic Pytorch
-
 
 ##### Pytorch as a tensor library
 - [Tensor](./basic_pytorch/tensor.md) goes through basic concepts, APIs and usage of torch.Tensor.
