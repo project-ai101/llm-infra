@@ -31,6 +31,7 @@ computation.
 - MoE (Mixture of Experts): [Misture-of-Experts with Expert Choice Routing](https://arxiv.org/abs/2202.09368)
 
 ##### Tutorial Links
+- Andrej Karpathy's Youtbue Link: [Intro to Large Language Models](https://www.youtube.com/watch?v=zjkBMFhNj_g)
 - Andrej Karpathy's Youtube Link: [Let's Build GPT: from scratch, in code, spelled out](https://www.youtube.com/watch?v=kCc8FmEb1nY)
 - Andrej Karpathy's Reproduce GPT-2(124M) tutorial video
     - Youtube Link: [Let's reproduce GPT-2(124M)](https://www.youtube.com/watch?v=l8pRSuU81PU).
