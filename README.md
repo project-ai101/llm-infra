@@ -37,6 +37,9 @@ computation.
     - The source code for the Youtube video in github is [here](https://github.com/karpathy/build-nanogpt).
     - The source code of OpenAI GPT-2 in github is [here](https://github.com/openai/gpt-2)
 - Andrej Karpathy's llm.c github Link: [~2000 lines of C code for training GPT-2](https://github.com/karpathy/llm.c)
+
+### Open Source Models
+
 ##### Llama 
 To download Llama 2, one may send out the request to access the next version llama to meta via this [meta llama download link](https://ai.meta.com/resources/models-and-libraries/llama-downloads/).
 Then, an email from meta will have detail on how to get the final download links. In the request, it comes three sets of models to be chosen. One is the base model set. They are Llama 2 & Llama 2 Chat.
