@@ -59,7 +59,11 @@ inference model is hosted at the [github site] (https://github.com/meta-llama/ll
 
 <ins> Llama 3.1 </ins>: Llama 3.1 is state of the art multilingual open source LLMs which has three models, 8B, 70B and 405B. The LLM with larger size parameters typically has stronger reasoning capabilities and more accurate responses. To download the models, follow the [link](https://www.llama.com/llama-downloads/)
 
-<ins> Llama 3.2 </ins>: Llama 3.2 provides two categories of LLMs. The first category LLMs are flexible and can reason on high resolution images and output text, which come with 11B and 90B parameter sizes. The second category LLMs 
+<ins> Llama 3.2 </ins>: Llama 3.2 provides two categories of LLMs. 
+- 11B and 90B models for flexible and can reasoning on high resolution images and output text.
+- 1B and 3B models for low cost and also for embedded and edge devices.
+
+To download the models, follow the [link](https://www.llama.com/llama-downloads/)
 
 
 ##### Mistral
