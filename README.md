@@ -79,17 +79,17 @@ Gemma Inference Github Repository
 
 ##### Microsoft Phi
 Microsoft released following Phi 3 open models
-- Phi 3 Mini (4K Instruct and 12K Instruct)
-- Phi 3 Small (8K Instruct and 128K Instruct)
-- Phi 3 Medium (4K Instruct and 128K Instruct)
-- Phi 3 Vision (128K Instruct)
+- Phi 3 Mini (4K Instruct and 12K Instruct, 3.8B)
+- Phi 3 Small (8K Instruct and 128K Instruct, 7B)
+- Phi 3 Medium (4K Instruct and 128K Instruct, 14B)
+- Phi 3 Vision (128K Instruct, 4.15B)
 
 [Microsoft Phi-Cookbook](https://github.com/microsoft/Phi-3CookBook) is the Macrosoft Phi github repository. To download models, we can get them from Huggingface with huggingface-cli commands.
 If you need information on how to install huggingface-cli and how to use the command, please follow the [link](https://huggingface.co/docs/huggingface_hub/guides/cli)
 
-Microsoft released following Phi 3.5 open models
-- Phi 3.5 Mini (128K Instruct)
-- Phi 3.5 Vision (128K Instruct)
+The latest releases from Microsoft are following Phi 3.5 open models
+- Phi 3.5 Mini (128K Instruct, 3.82B)
+- Phi 3.5 Vision (128K Instruct, 4.15B)
 - Phi 3.5 MoE (128K Instruct, 16 x 3.8B parameters with 6.6 active parameters)
 
 ##### LLM Comparison
