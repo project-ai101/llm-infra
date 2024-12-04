@@ -6,7 +6,7 @@ for people to learn LLM based AI. The areas which I mainly focus on are Pytorch,
 (cuDNN, tensorRT, Megatron-LM) and HuggingFace.
 Also, only open source LLMs, such as, LLAMA 2 and Llama 3 from Meta, Mistral LLMs, Gemma from Google 
 and Phi from Microsoft from Mistral, are extensively used 
-in the discussion. Open source LLMs allow us to look into the details of LLMs.
+in the discussion. Two new open source LLMs, QWen 2.5 and DeepSeek 2.5 are also in watching. Open source LLMs allow us to look into the details of LLMs.
 
 In LLMs, tensor computation is the fundamental tool to turn LLMs into reality. For tensor computation,
 there are two important aspects, one is to make complex tensor computation easy to use and another is to
