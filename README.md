@@ -202,6 +202,14 @@ https://huggingface.co/settings/token/
 With the token generated to you, you can login into the huggingface site by
 ```
     huggingface-cli login
+
+##### Main concepts in HuggingFace
+
+<b>pipeline</b>
+
+<b>model</b>
+
+<b>tokenizer</b>
 ```
 
 After login into the huggingface, one can download any supported models, for example,
