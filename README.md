@@ -202,17 +202,18 @@ https://huggingface.co/settings/token/
 With the token generated to you, you can login into the huggingface site by
 ```
     huggingface-cli login
-
-##### Main concepts in HuggingFace
-
-<b>pipeline</b>
-
-<b>model</b>
-
-<b>tokenizer</b>
 ```
-
 After login into the huggingface, one can download any supported models, for example,
 ```
     huggingface-cli download google/codegemma-7b --repo-type=model
 ```
+##### Main concepts in HuggingFace
+In HuggingFace, one of the most important concept is transformers. HuggingFace transformers is a library providing APIs for people to use models and datasets in HuggingFace website to perform various tasks. In this library, some of the most important concepts are pipeline, model, tokenizer, dataset and trainer.
+
+<b>pipeline</b> is an action object class which encapsulating model, tokenizer and data
+
+<b>model</b>
+
+<b>tokenizer</b>
+
+
