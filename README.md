@@ -29,7 +29,7 @@ computation.
 - Quantization: [bitsandbytes](https://arxiv.org/abs/2208.07339), [GPTQ](https://arxiv.org/abs/2210.17323), [AWQ](https://arxiv.org/abs/2306.00978), [SqueezeLLM](https://arxiv.org/abs/2306.07629)
 - The technical specification of LLAMA 2: [Llama 2: The Open Foundation and Fine-Tuned Chat Models](https://ai.meta.com/research/publications/llama-2-open-foundation-and-fine-tuned-chat-models/)
 - MoE (Mixture of Experts): [Misture-of-Experts with Expert Choice Routing](https://arxiv.org/abs/2202.09368)
-- RL (Reinforce Learning) training based LLM (DeepSeek R1): [https://arxiv.org/abs/2501.12948]
+- RL (Reinforce Learning) training based LLM: [DeepSeek R1] (https://arxiv.org/abs/2501.12948)
 
 ##### Tutorial Links
 - Andrej Karpathy's Youtbue Link: [Intro to Large Language Models](https://www.youtube.com/watch?v=zjkBMFhNj_g)
