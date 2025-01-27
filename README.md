@@ -4,9 +4,9 @@
 LLM-Infra respository provides in-depth tutorials and examples on LLM training and inference infrastructure in one place
 for people to learn LLM based AI. The areas which I mainly focus on are Pytorch, Fairscale, Nvidia AI packages 
 (cuDNN, tensorRT, Megatron-LM) and HuggingFace.
-Also, only open source LLMs, such as, LLAMA 2 and Llama 3 from Meta, Mistral LLMs, Gemma from Google 
-and Phi from Microsoft from Mistral, are extensively used 
-in the discussion. Two new open source LLMs, QWen 2.5 and DeepSeek 2.5 are also in watching. Open source LLMs allow us to look into the details of LLMs.
+Also, only open source LLMs, such as, LLAMA 2 and Llama 3 from Meta, DeepSeek, QWen, Mistral LLMs, Gemma from Google 
+and Phi from Microsoft, are extensively used 
+in the discussion. Open source LLMs allow us to look into the details of LLMs.
 
 In LLMs, tensor computation is the fundamental tool to turn LLMs into reality. For tensor computation,
 there are two important aspects, one is to make complex tensor computation easy to use and another is to
@@ -29,6 +29,7 @@ computation.
 - Quantization: [bitsandbytes](https://arxiv.org/abs/2208.07339), [GPTQ](https://arxiv.org/abs/2210.17323), [AWQ](https://arxiv.org/abs/2306.00978), [SqueezeLLM](https://arxiv.org/abs/2306.07629)
 - The technical specification of LLAMA 2: [Llama 2: The Open Foundation and Fine-Tuned Chat Models](https://ai.meta.com/research/publications/llama-2-open-foundation-and-fine-tuned-chat-models/)
 - MoE (Mixture of Experts): [Misture-of-Experts with Expert Choice Routing](https://arxiv.org/abs/2202.09368)
+- RL (Reinforce Learning) training based LLM (DeepSeek R1): [https://arxiv.org/abs/2501.12948]
 
 ##### Tutorial Links
 - Andrej Karpathy's Youtbue Link: [Intro to Large Language Models](https://www.youtube.com/watch?v=zjkBMFhNj_g)
