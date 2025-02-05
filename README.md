@@ -165,6 +165,8 @@ to pretrain, finetune and deploy AI models. The github link is
 
 ##### Open Source Libraries
 - Pytorch for RL
+  - Pytorch RL is an open source library from Meta with MIT license. [github](https://github.com/pytorch/rl)
+  - Pytorch version stable baselines3 with MIT license. [github](https://github.com/hill-a/stable-baselines)
 - Opne AI Gymnasium is an open source Python library for developing and comparing 
 reinforcement learning algorithms from OpenAI. It was based on 
 [OpenAI Gym](https://github.com/openai/gym)
@@ -172,6 +174,7 @@ And it has MIT license.
 [The github link](https://github.com/Farama-Foundation/Gymnasium)
 - Vocano Engine Reinforcement Learning for LLM is an open source RL library. It has Apache 2.0 license. 
 [The github link](https://github.com/volcengine/verl)
+- Ray from Berkeley with Apache 2.0 license. [github](https://github.com/ray-project/ray)
 
 ### LLM HPC - Nvidia AI Tools
 ##### cuda Graph
