@@ -161,6 +161,22 @@ Pytorch Lightning is an open source project to develop a deep learning framework
 to pretrain, finetune and deploy AI models. The github link is 
 [here](https://github.com/Lightning-AI/pytorch-lightning). 
 
+### Reinforcement Learning
+
+##### Pytorch for RL
+
+
+##### OpenAI Gymnasium
+Opne AI Gymnasium is an open source Python library for developing and comparing 
+reinforcement learning algorithms from OpenAI. It was based on 
+[OpenAI Gym](https://github.com/openai/gym)
+And it has MIT license.
+[The github link](https://github.com/Farama-Foundation/Gymnasium)
+
+
+##### Vocano Engine Reinforcement Learning for LLM
+Vocano Engine Reinforcement Learning for LLM is an open source RL library. It has Apache 2.0 license. 
+[The github link](https://github.com/volcengine/verl)
 
 ### LLM HPC - Nvidia AI Tools
 ##### cuda Graph
