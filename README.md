@@ -166,7 +166,7 @@ to pretrain, finetune and deploy AI models. The github link is
 ##### Open Source Libraries
 - Pytorch for RL
   - Pytorch RL is an open source library from Meta with MIT license. [github](https://github.com/pytorch/rl)
-  - Pytorch version stable baselines3 with MIT license. [github](https://github.com/hill-a/stable-baselines)
+  - Pytorch version Stable Baselines3 with MIT license. [github](https://github.com/hill-a/stable-baselines)
 - Opne AI Gymnasium is an open source Python library for developing and comparing 
 reinforcement learning algorithms from OpenAI. It was based on 
 [OpenAI Gym](https://github.com/openai/gym)
