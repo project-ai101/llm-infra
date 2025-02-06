@@ -231,4 +231,8 @@ In HuggingFace, one of the most important concept is transformers. HuggingFace t
 
 <b>tokenizer</b>
 
+<b>safetensor</b>
+Safetensor is HuggingFace format to save tensors. For detail, one may refer to [here](https://huggingface.co/docs/safetensors/en/index)
 
+The [safetensors.torch](https://huggingface.co/docs/safetensors/en/api/torch) provides APIs to 
+load models in safetensor format into torch format or save models from torch format into safetenor format.
