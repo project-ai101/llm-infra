@@ -68,7 +68,14 @@ inference model is hosted at the [github site] (https://github.com/meta-llama/ll
 
 To download the models, follow the [link](https://www.llama.com/llama-downloads/)
 
-
+##### DeepSeek
+- DeepSeek V3: [github link](https://github.com/deepseek-ai/DeepSeek-V3)
+- DeepSeek R1: [github link](https://github.com/deepseek-ai/DeepSeek-R1)
+##### QWen
+- QWen2.5: [github link](https://github.com/QwenLM/Qwen2.5)
+- QWen2.5 Coder: [github link](https://github.com/QwenLM/Qwen2.5-Coder)
+- QWen2.5 VL: [github link]()
+- QWen Agent: [github_link]()
 ##### Mistral
 Mistral comes with two model Mistral 2B and Mistral 8X7B. Following links have brief introduction of them and links to download and other resources.
 
