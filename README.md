@@ -234,7 +234,13 @@ After login into the huggingface, one can download any supported models, for exa
 ##### Main concepts in HuggingFace
 In HuggingFace, one of the most important concept is transformers. HuggingFace transformers is a library providing APIs for people to use models and datasets in HuggingFace website to perform various tasks. In this library, some of the most important concepts are pipeline, model, tokenizer, dataset and trainer.
 
-<b>pipeline</b> is an action object class which encapsulating model, tokenizer and data
+<b>pipeline</b> 
+
+pipeline() is an action object class which encapsulating model, tokenizer and data. It is a great way to use models for inferences.
+It also encapsulates all other pipelines. Currently, pipelines() supports more than 17 task specific pipeline. The task type can be specified
+by pipeline(task="task_name"). Further, through pipeline() API, one also can specify model and tokenizer which the pipeline needs to use by
+pipeline(model="model_path", tokenizer="tokenizer_path").
+
 
 <b>model</b>
 
