@@ -30,6 +30,8 @@ computation.
 - The technical specification of LLAMA 2: [Llama 2: The Open Foundation and Fine-Tuned Chat Models](https://ai.meta.com/research/publications/llama-2-open-foundation-and-fine-tuned-chat-models/)
 - MoE (Mixture of Experts): [Misture-of-Experts with Expert Choice Routing](https://arxiv.org/abs/2202.09368)
 - RL (Reinforce Learning) training based LLM: [DeepSeek R1](https://arxiv.org/abs/2501.12948), [DeepSeek V3](https://arxiv.org/pdf/2412.19437)
+- Test Time Scaling: [s1: Simple Time Test Scaling](https://arxiv.org/pdf/2501.19393)
+- Chain of Thought (CoT): [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](https://arxiv.org/pdf/2201.11903)
 
 ##### Tutorial Links
 - Andrej Karpathy's Youtbue Link: [Intro to Large Language Models](https://www.youtube.com/watch?v=zjkBMFhNj_g)
