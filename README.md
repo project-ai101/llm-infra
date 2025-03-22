@@ -74,10 +74,10 @@ To download the models, follow the [link](https://www.llama.com/llama-downloads/
 - [DeepSeek Coder-V2](https://github.com/deepseek-ai/DeepSeek-Coder-V2): an open source MoE code language model with context length 128K
 - [DeepSeek VL](https://github.com/deepseek-ai/DeepSeek-VL): an open source Vision-Language (VL) Model designed for real-world vision and language understanding applicatinos.
 ##### QWen
-- QWen2.5: [github link](https://github.com/QwenLM/Qwen2.5)
-- QWen2.5 Coder: [github link](https://github.com/QwenLM/Qwen2.5-Coder)
-- QWen2.5 VL: [github link](https://github.com/QwenLM/Qwen2.5-VL)
-- QWen Agent: [github_link](https://github.com/QwenLM/Qwen-Agent)
+- [QWen2.5](https://github.com/QwenLM/Qwen2.5): large-language models with 0.5B, 1.5B, 3B, 7B, 14B, 32B and 72B base and instruct variants. Support 128K content length and 8K generation length.
+- [QWen2.5 Coder](https://github.com/QwenLM/Qwen2.5-Coder): code language models with 0.5B, 1.5B, 3B, 7B, 14B and 32B base and instruct variants.
+- [QWen2.5 VL](https://github.com/QwenLM/Qwen2.5-VL): multimodel LLMs with 3B, 7B and 72B parameters
+- [QWen Agent](https://github.com/QwenLM/Qwen-Agent): agent framework and applications built upon QWen >= 2.0, featuring Function Calling, Code Interpreter, RAG, and Chrome extension.
 ##### Mistral
 Mistral comes with two model Mistral 2B and Mistral 8X7B. Following links have brief introduction of them and links to download and other resources.
 
