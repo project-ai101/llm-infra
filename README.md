@@ -69,8 +69,10 @@ inference model is hosted at the [github site] (https://github.com/meta-llama/ll
 To download the models, follow the [link](https://www.llama.com/llama-downloads/)
 
 ##### DeepSeek
-- DeepSeek V3: [github link](https://github.com/deepseek-ai/DeepSeek-V3)
-- DeepSeek R1: [github link](https://github.com/deepseek-ai/DeepSeek-R1)
+- [DeepSeek V3](https://github.com/deepseek-ai/DeepSeek-V3): a strong MoE language model with 671B parameters with 37B activated for each token.
+- [DeepSeek R1](https://github.com/deepseek-ai/DeepSeek-R1): first generation reasoning models from DeepSeek with large-scale reinformcement learning and cold-start data. It has 6 dense models distilled from DeepSeek-R1 based Llama and QWen
+- [DeepSeek Coder-V2](https://github.com/deepseek-ai/DeepSeek-Coder-V2): an open source MoE code language model with context length 128K
+- [DeepSeek VL](https://github.com/deepseek-ai/DeepSeek-VL): an open source Vision-Language (VL) Model designed for real-world vision and language understanding applicatinos.
 ##### QWen
 - QWen2.5: [github link](https://github.com/QwenLM/Qwen2.5)
 - QWen2.5 Coder: [github link](https://github.com/QwenLM/Qwen2.5-Coder)
