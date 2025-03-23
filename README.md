@@ -81,7 +81,7 @@ To download the models, follow the [link](https://www.llama.com/llama-downloads/
 - [QWen Agent](https://github.com/QwenLM/Qwen-Agent): agent framework and applications built upon QWen >= 2.0, featuring Function Calling, Code Interpreter, RAG, and Chrome extension.
 
 ##### Microsoft Phi
-[Microsoft Phi-Cookbook](https://github.com/microsoft/Phi-3CookBook) is the Macrosoft Phi github repository. To download models, we can get them from Huggingface with huggingface-cli commands.
+[Microsoft Phi-Cookbook](https://github.com/microsoft/Phi-3CookBook) is the Macrosoft Phi github repository. To download models, we can get them from [Huggingface](https://huggingface.co/microsoft) with huggingface-cli commands.
 If you need information on how to install huggingface-cli and how to use the command, please follow the [link](https://huggingface.co/docs/huggingface_hub/guides/cli)
 
 The latest Microsoft Phi4 open models. They can be downloaded from [HuggingFace](https://huggingface.co/collections/microsoft/phi-4-677e9380e514feb5577a40e4)
