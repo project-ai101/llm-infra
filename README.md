@@ -79,6 +79,27 @@ To download the models, follow the [link](https://www.llama.com/llama-downloads/
 - [QWen2.5 VL](https://github.com/QwenLM/Qwen2.5-VL): multimodel LLMs with 3B, 7B and 72B parameters
 - [QwQ](https://github.com/QwenLM/QwQ): QWen reasoning models with 32B in release and 72B in preview.
 - [QWen Agent](https://github.com/QwenLM/Qwen-Agent): agent framework and applications built upon QWen >= 2.0, featuring Function Calling, Code Interpreter, RAG, and Chrome extension.
+
+##### Microsoft Phi
+[Microsoft Phi-Cookbook](https://github.com/microsoft/Phi-3CookBook) is the Macrosoft Phi github repository. To download models, we can get them from Huggingface with huggingface-cli commands.
+If you need information on how to install huggingface-cli and how to use the command, please follow the [link](https://huggingface.co/docs/huggingface_hub/guides/cli)
+
+The latest Microsoft Phi4 open models. They can be downloaded from [HuggingFace](https://huggingface.co/collections/microsoft/phi-4-677e9380e514feb5577a40e4)
+- Phi 4 Mini Instruct (128K context length, 3.84B)
+- Phi 4 Multimodel Instruct (128K context length, 7B) for language, visino and speech
+- Phi 4 Instruct (16K context length, 14B) foundation model
+
+Microsoft released following Phi 3.5 open models
+- Phi 3.5 Mini (128K Instruct, 3.82B)
+- Phi 3.5 Vision (128K Instruct, 4.15B)
+- Phi 3.5 MoE (128K Instruct, 16 x 3.8B parameters with 6.6 active parameters)
+
+Microsoft released following Phi 3 open models
+- Phi 3 Mini (4K Instruct and 12K Instruct, 3.8B)
+- Phi 3 Small (8K Instruct and 128K Instruct, 7B)
+- Phi 3 Medium (4K Instruct and 128K Instruct, 14B)
+- Phi 3 Vision (128K Instruct, 4.15B)
+
 ##### Mistral
 Mistral comes with two model Mistral 2B and Mistral 8X7B. Following links have brief introduction of them and links to download and other resources.
 
@@ -89,24 +110,6 @@ Mistral comes with two model Mistral 2B and Mistral 8X7B. Following links have b
 Gemma Inference Github Repository
 - [Gemma Pytorch](https://github.com/google/gemma_pytorch)
 - [Gemma C++](https://github.com/google/gemma.cpp)
-
-##### Microsoft Phi
-Microsoft released following Phi 3 open models
-- Phi 3 Mini (4K Instruct and 12K Instruct, 3.8B)
-- Phi 3 Small (8K Instruct and 128K Instruct, 7B)
-- Phi 3 Medium (4K Instruct and 128K Instruct, 14B)
-- Phi 3 Vision (128K Instruct, 4.15B)
-
-[Microsoft Phi-Cookbook](https://github.com/microsoft/Phi-3CookBook) is the Macrosoft Phi github repository. To download models, we can get them from Huggingface with huggingface-cli commands.
-If you need information on how to install huggingface-cli and how to use the command, please follow the [link](https://huggingface.co/docs/huggingface_hub/guides/cli)
-
-The latest releases from Microsoft are following Phi 3.5 open models
-- Phi 3.5 Mini (128K Instruct, 3.82B)
-- Phi 3.5 Vision (128K Instruct, 4.15B)
-- Phi 3.5 MoE (128K Instruct, 16 x 3.8B parameters with 6.6 active parameters)
-
-##### LLM Comparison
-
 
 ### Basic Pytorch
 
