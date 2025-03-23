@@ -100,6 +100,19 @@ Microsoft released following Phi 3 open models
 - Phi 3 Medium (4K Instruct and 128K Instruct, 14B)
 - Phi 3 Vision (128K Instruct, 4.15B)
 
+
+##### Google Gemma
+The following Gemma 3 models  with 128K contenxt length and 8K Output Tokens can be downloaded from [HuggingFace](https://huggingface.co/collections/google/gemma-3-release-67c6c6f89c4f76621268bb6d)
+
+- Gemma 3 1B (Text Generation)
+- Gemma 3 4B (Image-Text-to-Text)
+- Gemma 3 12B (Image-Text-to-Text)
+- Gemma 3 27B (Image-Text-to-Text)
+
+Gemma Inference Github Repository
+- [Gemma Pytorch](https://github.com/google/gemma_pytorch)
+- [Gemma C++](https://github.com/google/gemma.cpp)
+
 ##### Mistral
 Mistral comes with two model Mistral 2B and Mistral 8X7B. Following links have brief introduction of them and links to download and other resources.
 
