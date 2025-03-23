@@ -77,6 +77,7 @@ To download the models, follow the [link](https://www.llama.com/llama-downloads/
 - [QWen2.5](https://github.com/QwenLM/Qwen2.5): large-language models with 0.5B, 1.5B, 3B, 7B, 14B, 32B and 72B base and instruct variants. Support 128K content length and 8K generation length.
 - [QWen2.5 Coder](https://github.com/QwenLM/Qwen2.5-Coder): code language models with 0.5B, 1.5B, 3B, 7B, 14B and 32B base and instruct variants.
 - [QWen2.5 VL](https://github.com/QwenLM/Qwen2.5-VL): multimodel LLMs with 3B, 7B and 72B parameters
+- [QwQ](https://github.com/QwenLM/QwQ): QWen reasoning models with 32B in release and 72B in preview.
 - [QWen Agent](https://github.com/QwenLM/Qwen-Agent): agent framework and applications built upon QWen >= 2.0, featuring Function Calling, Code Interpreter, RAG, and Chrome extension.
 ##### Mistral
 Mistral comes with two model Mistral 2B and Mistral 8X7B. Following links have brief introduction of them and links to download and other resources.
