@@ -94,13 +94,6 @@ Microsoft released following Phi 3.5 open models
 - Phi 3.5 Vision (128K Instruct, 4.15B)
 - Phi 3.5 MoE (128K Instruct, 16 x 3.8B parameters with 6.6 active parameters)
 
-Microsoft released following Phi 3 open models
-- Phi 3 Mini (4K Instruct and 12K Instruct, 3.8B)
-- Phi 3 Small (8K Instruct and 128K Instruct, 7B)
-- Phi 3 Medium (4K Instruct and 128K Instruct, 14B)
-- Phi 3 Vision (128K Instruct, 4.15B)
-
-
 ##### Google Gemma
 The following Gemma 3 models  with 128K contenxt length and 8K Output Tokens can be downloaded from [HuggingFace](https://huggingface.co/collections/google/gemma-3-release-67c6c6f89c4f76621268bb6d)
 
