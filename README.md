@@ -119,11 +119,6 @@ Mistral comes with two model Mistral 2B and Mistral 8X7B. Following links have b
 - [Mistral 7B in short](https://mistral.ai/news/announcing-mistral-7b/)
 - [Mistral 8X7B: Mixtral of Experts, A high quality Sparse Mixture\-of\-Experts](https://mistral.ai/news/mixtral-of-experts/)
 
-##### Google Gemma
-Gemma Inference Github Repository
-- [Gemma Pytorch](https://github.com/google/gemma_pytorch)
-- [Gemma C++](https://github.com/google/gemma.cpp)
-
 ### Basic Pytorch
 
 ##### Pytorch as a tensor library
