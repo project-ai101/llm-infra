@@ -97,10 +97,10 @@ Microsoft released following Phi 3.5 open models
 ##### Google Gemma
 The following Gemma 3 models  with 128K contenxt length and 8K Output Tokens can be downloaded from [HuggingFace](https://huggingface.co/collections/google/gemma-3-release-67c6c6f89c4f76621268bb6d)
 
-- Gemma 3 1B (Text Generation)
-- Gemma 3 4B (Image-Text-to-Text)
-- Gemma 3 12B (Image-Text-to-Text)
-- Gemma 3 27B (Image-Text-to-Text)
+- Gemma 3 - 1B (Text Generation)
+- Gemma 3 - 4B (Image-Text-to-Text)
+- Gemma 3 - 12B (Image-Text-to-Text)
+- Gemma 3 - 27B (Image-Text-to-Text)
 
 Gemma Inference Github Repository
 - [Gemma Pytorch](https://github.com/google/gemma_pytorch)
