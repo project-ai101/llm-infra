@@ -107,9 +107,10 @@ Gemma Inference Github Repository
 - [Gemma C++](https://github.com/google/gemma.cpp)
 
 ##### Mistral
-Mistral comes with two model Mistral 2B and Mistral 8X7B. Following links have brief introduction of them and links to download and other resources.
+Download Mistral open models from [HuggingFace](https://huggingface.co/mistralai)
 
-- [Mistral 7B in short](https://mistral.ai/news/announcing-mistral-7b/)
+- Mistral Small 3.1-24B-Instruct-2503: A multimodel model - image-text-to-text
+- Mistral 7B Instruct-v0.3: A LLM foundation text generation model.
 - [Mistral 8X7B: Mixtral of Experts, A high quality Sparse Mixture\-of\-Experts](https://mistral.ai/news/mixtral-of-experts/)
 
 ### Basic Pytorch
