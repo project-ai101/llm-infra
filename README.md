@@ -174,17 +174,41 @@ where i is from 0 to N-1. And the module in each process shall be constructed in
 
 In general, DDP is much faster than DataParallel for a single node with multiple devices.
 
-##### Fully Sharded Data-Parallel Training (FSDP)
+##### Tensor Parallelism
+PyTorch tensor parallelism is mainly built on PyTorch DTensor. For the details, one may refer to [its github link](https://github.com/pytorch/pytorch/blob/main/torch/distributed/tensor/README.md). Here is the brief summary.
 
-##### Tensor Parallel
+The distributed tensor is in torch.distributed.tensor package. To create a distributed tensor, three primitives are required.
+- a big native tensor
+- a device topology object
+- a parameter distribution policy
 
-##### Pipeline Parallel
+Here is a simple example,
+```
+    import os
+    import torch
+    from torch.distributed.tensor import Shard, Replicate, init_device_mesh, distribute_tensor
+
+    big_tensor = torch.randn(8888, 100)
+    dev_top = init_device_mesh("cuda", (4,))
+    dist_tensor = distribute_tensor(big_tensor, dev_top, [Shard(dim=0)])
+```
+The init_device_mesh("cuda", (4,)) make a mesh object with following layout
+```
+                     colum 0     column 1
+         row 0        GPU0        GPU1
+         row 1        GPU2        GPU3
+```
+Shard(dim=0) means the big_tensor will be sliced into two small tensors along row axis into tesnor1(4444, 100) and tensor2(4444, 100). dist_tensor represents the two tensor1 and tesnor2 with alloction tesnor1 in GPU0 and GPU1 and tensor2 in GPU2 and GPU3.
+
+##### Pipeline Parallelism
 
 ##### Fairscale
 For LLMs, the memory and computation capacity demands require many GPUs. Fairscale is 
 framework to support Pytorch run over distributed GPUs. The framework library is an
 open source project from Meta. The github link is 
 [here](https://github.com/facebookresearch/fairscale)
+
+##### Fully Sharded Data-Parallel Training (FSDP)
 
 ### Advanced Pytorch Topics
 
