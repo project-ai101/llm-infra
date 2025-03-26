@@ -42,7 +42,7 @@ computation.
     - The source code of OpenAI GPT-2 in github is [here](https://github.com/openai/gpt-2)
 - Andrej Karpathy's llm.c github Link: [~2000 lines of C code for training GPT-2](https://github.com/karpathy/llm.c)
 
-### Open Source Models
+### Top Open Source Models
 
 ##### Meta Llama 
 The latest llama models,
