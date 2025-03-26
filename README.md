@@ -159,6 +159,19 @@ $` A_{0}*x, A_{1}*x, A_{2}*x`$ and $`A_{3}*x`$ where $`A_{0}`$ is first 8 rows o
 ##### DistributedDataParallel
 torch.nn.parallel.DistributedDataParallel (DDP) provides data parallelism by synchronizing gradients across each model replica. It is users' respobilities to chunk or shard the input across participating GPUs. DDP is built based torch.distributed. So, torch.distributed must be initialized by torch.distributed.init_process_group() before create DDP. For a node with multiple devices, each subtask is run within a separate process instead of thread. This is different with torch.nn.DataParallel.
 
+For example, for a host with N GPUs, we need to spawn up N processes with each process exclusively works on a single GPU from 0 to N-1. This can be done by calling,
+
+```
+      torch.cuda.set_device(i)
+```
+
+where i is from 0 to N-1. And the module in each process shall be constructed in following way,
+
+```
+      torch.distributed.init_process_group(backend='nccl', world_size=N, init_method='...')
+      model = DistributedDataParallel(model, device_ids=[i], output_device=i)
+```
+
 In general, DDP is much faster than DataParallel for a single node with multiple devices.
 
 ##### Fully Sharded Data-Parallel Training (FSDP)
