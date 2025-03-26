@@ -147,15 +147,15 @@ are provided.
 
 ### Distributed Pytorch
 
-##### DataParallel and DistributedDataParallel
-torch.nn.DataParallel parallelizes the application of the given torch.nn.Module by splitting the input accross the specified devices by chunking in the batch dimension. This means that the Module is "replicated" on each devices. This containers has single process and multiple threads. Let's consider a simple example,
+##### DataParallel
+The pytorch package, torch.nn.DataParallel, parallelizes the application of the given torch.nn.Module by splitting the input accross the specified devices by chunking in the batch dimension. This means that the Module is "replicated" on each devices. This containers has single process and multiple threads. Let's consider a simple example,
 
-y = Ax where A is 30 x 10 matrix. The input size is 30 and output size is 10. If there are 4 GPU devices, The computation task Ax can be partitioned into 4 subtasks, A0*x, A1*x, A2*x and A3*x where A0 is first 8 rows of A, A1 is the second 8 rows, A2 is the third 8 rows and A3 is the last 6 rows. And the 4 subtasks are distributed to each GPU device.
+y = Ax where A is 30 x 10 matrix. The input size is 30 and output size is 10. If there are 4 GPU devices, The computation task Ax can be partitioned into 4 subtasks, A0*x, A1*x, A2*x and A3*x where A0 is first 8 rows of A, A1 is the second 8 rows, A2 is the third 8 rows and A3 is the last 6 rows. And the 4 subtasks are distributed to each GPU device. And there are 4 threads with each thread for one subtask. All 4 threads run within the single process.
 
 ##### DistributedDataParallel
-torch.nn.parallel.DistributedDataParallel (DDP) provides data parallelism by synchronizing gradients across each model replica. It is users' respobilities to chunk or shard the input across participating GPUs. DDP is built based torch.distributed. So, torch.distributed must be initialized by torch.distributed.init_process_group() before create DDP.
+torch.nn.parallel.DistributedDataParallel (DDP) provides data parallelism by synchronizing gradients across each model replica. It is users' respobilities to chunk or shard the input across participating GPUs. DDP is built based torch.distributed. So, torch.distributed must be initialized by torch.distributed.init_process_group() before create DDP. For a node with multiple devices, each subtask is run within a separate process instead of thread. This is different with torch.nn.DataParallel.
 
-In general, DDP is faster than DataParallel. Even for a single node, DDP is recommended.
+In general, DDP is much faster than DataParallel for a single node with multiple devices.
 
 ##### Fully Sharded Data-Parallel Training (FSDP)
 
