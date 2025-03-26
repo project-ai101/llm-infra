@@ -45,6 +45,15 @@ computation.
 ### Open Source Models
 
 ##### Meta Llama 
+The latest llama models,
+
+- <ins> Llama 3.1 </ins> 8B and 405B foundation models
+- <ins> Llama 3.2 </ins> 1B and 3B light-weight models for edge devices
+- <ins> Llama 3.2 </ins> 11B and 90B modelmodel models.
+- <ins> Llama 3.3 </ins> 70B high performance and high quality foundation models
+
+Follow the official [Llama web site](https://www.llama.com) to download above latest models.
+
 <ins>Llama 2</ins>: To download Llama 2, one may send out the request to access the next version llama to meta via this [meta llama download link](https://ai.meta.com/resources/models-and-libraries/llama-downloads/).
 Then, an email from meta will have detail on how to get the final download links. In the request, it comes three sets of models to be chosen. One is the base model set. They are Llama 2 & Llama 2 Chat.
 - Llama 2 7B, 13B and 70B and Llama 2 Chat 7B, 13B and 70B models.
