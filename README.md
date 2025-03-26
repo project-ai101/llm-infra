@@ -47,16 +47,12 @@ computation.
 ##### Meta Llama 
 The latest llama models,
 
-- <ins> Llama 3.1 </ins> 8B and 405B foundation models
-- <ins> Llama 3.2 </ins> 1B and 3B light-weight models for edge devices
-- <ins> Llama 3.2 </ins> 11B and 90B modelmodel models.
-- <ins> Llama 3.3 </ins> 70B high performance and high quality foundation models
+- <ins> Llama 3.1 </ins> - 8B and 405B foundation models
+- <ins> Llama 3.2 </ins> - 1B and 3B light-weight models for edge devices
+- <ins> Llama 3.2 </ins> - 11B and 90B modelmodel models.
+- <ins> Llama 3.3 </ins> - 70B high performance and high quality foundation models
 
 Follow the official [Llama web site](https://www.llama.com) to download above latest models.
-
-<ins>Llama 2</ins>: To download Llama 2, one may send out the request to access the next version llama to meta via this [meta llama download link](https://ai.meta.com/resources/models-and-libraries/llama-downloads/).
-Then, an email from meta will have detail on how to get the final download links. In the request, it comes three sets of models to be chosen. One is the base model set. They are Llama 2 & Llama 2 Chat.
-- Llama 2 7B, 13B and 70B and Llama 2 Chat 7B, 13B and 70B models.
 
 <ins>Code Llama</ins>: The second set are Code Llama which have 12 models. The introduction can be found in this [link](https://ai.meta.com/blog/code-llama-large-language-model-coding/). The 12 models are
 - Code Llama 7B, 13B, 34B and 70B
@@ -65,17 +61,6 @@ Then, an email from meta will have detail on how to get the final download links
 
 <ins>LLama Guard</ins>: The third set is Llama Guard which a Llama 2 - 7B based instruction-tuned input-output safguard for human-AI converstaions. For more information about Llama Guard,
 one may refer to this [introduction link](https://ai.meta.com/research/publications/llama-guard-llm-based-input-output-safeguard-for-human-ai-conversations/).
-
-<ins> Llama 3 </ins>: Llama 3 has two models, 8B and 70B models. To download the models (aka model weights), you may follow the same steps as for downloading Llama2 above. The Llama 3
-inference model is hosted at the [github site] (https://github.com/meta-llama/llama3). The LLama 3 Meta page is [here](https://llama.meta.com/llama3/).
-
-<ins> Llama 3.1 </ins>: Llama 3.1 is state of the art multilingual open source LLMs which has three models, 8B, 70B and 405B. The LLM with larger size parameters typically has stronger reasoning capabilities and more accurate responses. To download the models, follow the [link](https://www.llama.com/llama-downloads/)
-
-<ins> Llama 3.2 </ins>: Llama 3.2 provides two categories of LLMs. 
-- 11B and 90B models for flexible and can reasoning on high resolution images and output text.
-- 1B and 3B models for low cost and also for embedded and edge devices.
-
-To download the models, follow the [link](https://www.llama.com/llama-downloads/)
 
 ##### DeepSeek
 - [DeepSeek V3](https://github.com/deepseek-ai/DeepSeek-V3): a strong MoE language model with 671B parameters with 37B activated for each token.
