@@ -154,7 +154,7 @@ The pytorch package, torch.nn.DataParallel, parallelizes the application of the 
 \hspace 4cm y = A*x
 ```
 where A is 30 x 10 matrix. The input size is 30 and output size is 10. If there are 4 GPU devices, The computation task Ax can be partitioned into 4 subtasks, 
-$` A_{0}*x, A_{1}*x, A_{2}*x`$ and $`A_{3}*x`$ where $`A_{0}`$ is first 8 rows of A, $`A_{1}~$ is the second 8 rows, $`A_{2}`$ is the third 8 rows and $`A_{3}`$ is the last 6 rows. And the 4 subtasks are distributed to each GPU device. And there are 4 threads with each thread for one subtask. All 4 threads run within the single process.
+$` A_{0}*x, A_{1}*x, A_{2}*x`$ and $`A_{3}*x`$ where $`A_{0}`$ is first 8 rows of A, $`A_{1}`$ is the second 8 rows, $`A_{2}`$ is the third 8 rows and $`A_{3}`$ is the last 6 rows. And the 4 subtasks are distributed to each GPU device. And there are 4 threads with each thread for one subtask. All 4 threads run within the single process.
 
 ##### DistributedDataParallel
 torch.nn.parallel.DistributedDataParallel (DDP) provides data parallelism by synchronizing gradients across each model replica. It is users' respobilities to chunk or shard the input across participating GPUs. DDP is built based torch.distributed. So, torch.distributed must be initialized by torch.distributed.init_process_group() before create DDP. For a node with multiple devices, each subtask is run within a separate process instead of thread. This is different with torch.nn.DataParallel.
