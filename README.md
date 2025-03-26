@@ -195,6 +195,9 @@ The init_device_mesh("cuda", (4,)) make a mesh object with following layout
 Shard(dim=0) means the big_tensor will be sliced into two small tensors along row axis into tesnor1(4444, 100) and tensor2(4444, 100). dist_tensor represents the two tensor1 and tesnor2 with alloction tesnor1 in GPU0 and GPU1 and tensor2 in GPU2 and GPU3.
 
 ##### Pipeline Parallelism
+Pipeline Paramllelism partition the execution of a model to multiple micro-batches which can be executed concurrently. The partioning of execution often requires intrusive code changes to the model. Also, the scheduling micro-batches in a distributed environment with data flow dependency consideration introduces another level of complexity.
+
+[torch.distributed.pipelining](https://pytorch.org/docs/stable/distributed.pipelining.html) package was originated [PiPPy](https://github.com/pytorch/PiPPy). The [article](https://www.deepspeed.ai/tutorials/pipeline/) from DeepSpeed has additional details on pipeline parallism. The torch.distributed.pipelining package provides a toolkit and APIs to automatically pipeline parallism and consists of two parts: a splitting frontend and a distributed runtime. The splitting frontend splits the model up into model partitions (PipelineStage) and captures the data-flow relationship. The distributed runtime executes the pipeline stages on different devices in parallel, handing things like micro-batch splitting, scheduling, communication, and gradient propagation, etc.
 
 ##### Fairscale
 For LLMs, the memory and computation capacity demands require many GPUs. Fairscale is 
