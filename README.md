@@ -144,6 +144,8 @@ Distributed training is challenging. It mainly involves Data Parallelism, Tensor
 
 Recently, DeepSeek has done a superb job in distributed training. In the section 3.2. Training Framework of the article, [DeepSeek-V3 Technical Report](https://arxiv.org/pdf/2412.19437), a brief discription of DeepSeek training framework has been given.
 
+Another popular distributed training framework is [DeepSpeed](https://www.deepspeed.ai) which was orginated from Microsoft Research in 2020.
+
 ##### DataParallel
 The pytorch package, torch.nn.DataParallel, parallelizes the application of the given torch.nn.Module by splitting the input accross the specified devices by chunking in the batch dimension. This means that the Module is "replicated" on each devices. This containers has single process and multiple threads. Let's consider a simple example,
 
@@ -241,6 +243,21 @@ And it has MIT license.
 ##### cuda Graph
 
 ##### cuDNN
+cuDNN (Cuda Deep Neural Network) library is a GPU-accelerated library for deep neural networks. It provices highly tuned implementations of common operations in deep neural network applications, such as,
+- Scaled dot-product attention
+- Convolution, including cross-correlation
+- Matrix multiplication
+- Normalizations, softmax, and pooling
+- Arithmetic, mathematical, relational, and logical pointwise operations.
+
+Further, cuDNN also supports a flexible multi-option fusion patterns.
+
+In cuDNN, both single-operation and multi-operation computations are expressed as operation graphas. These graphes can be constructed via following cuDNN APIs.
+- Python frontend API
+- C++ frontend API
+- C Backend API
+
+For the detailed reference, see [the offical website of cuDNN](https://docs.nvidia.com/deeplearning/cudnn/latest/)
 
 ##### tensorRT
 
