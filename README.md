@@ -259,15 +259,27 @@ In cuDNN, both single-operation and multi-operation computations are expressed a
 
 For the detailed reference, see [the offical website of cuDNN](https://docs.nvidia.com/deeplearning/cudnn/latest/)
 
-##### tensorRT
+##### Nvidia Inference Ecosystem
+<ins>TensorRT</ins> includes inference compilers (TensorRT compiler), runtimes (TensorRT-LLM) and model optimizations (TensorRT Model Optimizer and TensorRT Cloud). It deliver low latency and hhigh throughput for production applications.
 
-##### tensorRT-LLM
-[tensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM)
+TensorRT optimizes inference using techniques such as quanitzation, layer and tensor fusion, and kernel tuning. Download it from [its github](https://github.com/NVIDIA/TensorRT) site.
 
+<ins>tensorRT-LLM</ins> is an open-source library which accelerates and optimizes LLMs inference performce over NVidia platform with Python APIs. For more details, see [Nvidia tensorRT-LLM website](https://github.com/NVIDIA/TensorRT-LLM)
 
-##### Megatron and Megatron-LM
-[Megatron-LM](https://github.com/NVIDIA/Megatron-LM)
+<ins>Nvidia Dynamo</ins> (NVidia Triton) is an open-source modular inference framework for serving generative AI models in distributed environments. It seamlessly scales from one GPU to thousands of GPUs. It supports all major frameworks including TensorRT-LLM, vLLM, SGLang, PyTorch, etc. You can get more information from [NVidia Dynamo website](https://www.nvidia.com/en-us/ai/dynamo/) and download it from [its github site](https://github.com/ai-dynamo/dynamo)
 
+##### Nvidia Training Platforms
+<ins>Nvidia Megatron-Core</ins> is a PyTorch-based open-source library to train super large size models with thousands of GPUs. See [its NVidia website](https://developer.nvidia.com/megatron-core) for details and download it from [its github site](https://github.com/NVIDIA/Megatron-LM)
+
+<ins>Nvidia NeMo</ins> is an end-to-end platform for developing generative AI models, such as, LLMs, Vision Language models, Video models and speech model. See [its Nvidia website](https://www.nvidia.com/en-us/ai-data-science/products/nemo/) for details and download it from [its github site](https://github.com/NVIDIA/NeMo)
+
+<ins>Nvidia AI Enterprise</ins> supports each step of training, optimization and deployment of AI agents. See [its website](https://www.nvidia.com/en-us/data-center/products/ai-enterprise/) for details.
+
+##### Nvidia Physical AIs
+[Nvidia Cosmos](https://github.com/NVIDIA/Cosmos?tab=readme-ov-file) open source software with Apache-2.0 license
+- [Cosmos-Predict1](https://github.com/nvidia-cosmos/cosmos-predict1): a collection of general-purpose world foundation models for Physical AI
+- [Cosmos-Transfer1](https://github.com/nvidia-cosmos/cosmos-transfer1): a world-to-world transfer models for bridging the perceptual devide between simulated and real-world environments.
+- [Cosmos-Reson1](https://github.com/nvidia-cosmos/cosmos-reason1): reasoning models understand the physical common senses and generate appropriate embodied decisions via long chain-of-thought processes.
 
 ### LLM Community - HuggingFace
 
