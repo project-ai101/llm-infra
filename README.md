@@ -140,6 +140,9 @@ Training a LLM is a non-trivial task. From 1000 feet, training models shares som
 are provided.
 
 ### Distributed Pytorch
+Distributed training is challenging. It mainly involves Data Parallelism, Tensor Parallelism and Pipeline Parallelism. Here, how Meta Pytorch addresses these three topics is discussed. At last, fairscale is discussed in detail for distributed training and reference.
+
+Recently, DeepSeek has done a superb job in distributed training. In the section 3.2. Training Framework of the article, [DeepSeek-V3 Technical Report](https://arxiv.org/pdf/2412.19437), a brief discription of DeepSeek training framework has been given.
 
 ##### DataParallel
 The pytorch package, torch.nn.DataParallel, parallelizes the application of the given torch.nn.Module by splitting the input accross the specified devices by chunking in the batch dimension. This means that the Module is "replicated" on each devices. This containers has single process and multiple threads. Let's consider a simple example,
